@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Let’s Talk C Here – Zoe Is Reading Papers</title>
+<title>Terminology – Zoe Is Reading Papers</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -121,11 +121,11 @@ window.Quarto = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Terminology.html"> 
+    <a class="nav-link active" href="./Terminology.html" aria-current="page"> 
 <span class="menu-text">Terminology</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./TalkC.html" aria-current="page"> 
+    <a class="nav-link" href="./TalkC.html"> 
 <span class="menu-text">Let’s Talk C Here</span></a>
   </li>  
   <li class="nav-item">
@@ -150,9 +150,9 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#c-models" id="toc-c-models" class="nav-link active" data-scroll-target="#c-models">C Models</a></li>
-  <li><a href="#project-2" id="toc-project-2" class="nav-link" data-scroll-target="#project-2">Project 2</a></li>
-  <li><a href="#project-3" id="toc-project-3" class="nav-link" data-scroll-target="#project-3">Project 3</a></li>
+  <li><a href="#c-related" id="toc-c-related" class="nav-link active" data-scroll-target="#c-related">C Related</a></li>
+  <li><a href="#plants-related" id="toc-plants-related" class="nav-link" data-scroll-target="#plants-related">Plants Related</a></li>
+  <li><a href="#remote-sensing" id="toc-remote-sensing" class="nav-link" data-scroll-target="#remote-sensing">Remote Sensing</a></li>
   </ul>
 </nav>
     </div>
@@ -161,7 +161,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Let’s Talk C Here</h1>
+<h1 class="title">Terminology</h1>
 </div>
 
 
@@ -178,38 +178,21 @@ window.Quarto = {
 </header>
 
 
-<section id="c-models" class="level2">
-<h2 class="anchored" data-anchor-id="c-models">C Models</h2>
-<p>Researchers developed three ways for predicting global GPP!</p>
-<ol type="1">
-<li><p>Dynamic global vegetation models (DGVMs)</p>
-<p>Methods: Compute GPP based on complex process-based algorithms</p>
-<p>Benefits:</p>
-<p>Limitations:</p>
-<ul>
-<li>Underestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP</li>
-</ul></li>
-<li><p>Flux-data driven models</p>
-<p>Methods: Eddy-covariance flux measurements</p>
-<p>Benefits:</p>
-<p>Limitations:</p></li>
-<li><p>Remote-sensing based models (RSMs)</p>
-<p>Methods: Use algorithms based on satellite retrievals of land-surface properties</p>
-<p><span class="math display">\[GPP = LUE\times PAR\times fAPAR \]</span></p>
-<p>LUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation</p>
-<p>Benefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity</p>
-<p>Comapred to flux-data driven models, more extensive data</p>
-<p>Limitations:</p>
-<ul>
-<li>Validity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP</li>
-</ul></li>
-</ol>
+<section id="c-related" class="level2">
+<h2 class="anchored" data-anchor-id="c-related">C Related</h2>
 </section>
-<section id="project-2" class="level2">
-<h2 class="anchored" data-anchor-id="project-2">Project 2</h2>
+<section id="plants-related" class="level2">
+<h2 class="anchored" data-anchor-id="plants-related">Plants Related</h2>
+<ul>
+<li><p>Leaf area index (LAI): one-sided green leaf area per unit ground area</p></li>
+<li><p>Fraction of absorbed photosynthetic active radiation (FAPAR): fraction of photosynthetic active radiation (0.4–0.7um) absorbed by the vegetation</p></li>
+</ul>
 </section>
-<section id="project-3" class="level2">
-<h2 class="anchored" data-anchor-id="project-3">Project 3</h2>
+<section id="remote-sensing" class="level2">
+<h2 class="anchored" data-anchor-id="remote-sensing">Remote Sensing</h2>
+<ul>
+<li><a href="https://hakimabdi.com/blog/birth-of-the-normalized-difference-vegetation-index-and-the-paradigm-shift-in-satellite-remote-sensing-of-the-environment">Normalized Difference Vegetation Index (NDVI)</a> first introduced by Rousie and his colleagues in “<a href="https://ntrs.nasa.gov/api/citations/19740022614/downloads/19740022614.pdf"><em>Monitoring Vegetation Systems in the Great Plains with ERTS</em></a>”, defined as <span class="math inline">\(NDVI = (NIR-RED)/(NIR+RED)\)</span>. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs.&nbsp;sunny day?</li>
+</ul>
 
 
 </section>

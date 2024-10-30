@@ -4,21 +4,21 @@
     "href": "RemoteSensing.html",
     "title": "C in Remote Sensing",
     "section": "",
-    "text": "Read on 2024/10/30, check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
+    "text": "Read from 2024/10/30 to , check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
   },
   {
     "objectID": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024",
     "href": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024",
     "title": "C in Remote Sensing",
     "section": "",
-    "text": "Read on 2024/10/30, check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
+    "text": "Read from 2024/10/30 to , check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
   },
   {
-    "objectID": "RemoteSensing.html#project-2",
-    "href": "RemoteSensing.html#project-2",
+    "objectID": "RemoteSensing.html#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997",
+    "href": "RemoteSensing.html#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997",
     "title": "C in Remote Sensing",
-    "section": "Project 2",
-    "text": "Project 2"
+    "section": "Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)",
+    "text": "Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)\nRead from 2024/10/30 to , check the paper here: 10.1109/36.649788"
   },
   {
     "objectID": "RemoteSensing.html#project-3",
@@ -26,6 +26,20 @@
     "title": "C in Remote Sensing",
     "section": "Project 3",
     "text": "Project 3"
+  },
+  {
+    "objectID": "Terminology.html#plants-related",
+    "href": "Terminology.html#plants-related",
+    "title": "Terminology",
+    "section": "Plants Related",
+    "text": "Plants Related\n\nLeaf area index (LAI): one-sided green leaf area per unit ground area\nFraction of absorbed photosynthetic active radiation (FAPAR): fraction of photosynthetic active radiation (0.4–0.7um) absorbed by the vegetation"
+  },
+  {
+    "objectID": "Terminology.html#remote-sensing",
+    "href": "Terminology.html#remote-sensing",
+    "title": "Terminology",
+    "section": "Remote Sensing",
+    "text": "Remote Sensing\n\nNormalized Difference Vegetation Index (NDVI) first introduced by Rousie and his colleagues in “Monitoring Vegetation Systems in the Great Plains with ERTS”, defined as \\(NDVI = (NIR-RED)/(NIR+RED)\\). Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?"
   },
   {
     "objectID": "TalkC.html",
