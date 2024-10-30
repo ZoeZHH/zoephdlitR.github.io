@@ -7,8 +7,8 @@
     "text": "Read on 2024/10/30, check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
   },
   {
-    "objectID": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-etal.-2024",
-    "href": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-etal.-2024",
+    "objectID": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024",
+    "href": "RemoteSensing.html#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024",
     "title": "C in Remote Sensing",
     "section": "",
     "text": "Read on 2024/10/30, check the paper here: https://doi.org/10.1038/s43017-024-00601-6"
@@ -26,6 +26,20 @@
     "title": "C in Remote Sensing",
     "section": "Project 3",
     "text": "Project 3"
+  },
+  {
+    "objectID": "TalkC.html",
+    "href": "TalkC.html",
+    "title": "Let’s Talk C Here",
+    "section": "",
+    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits:\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
+  },
+  {
+    "objectID": "TalkC.html#c-models",
+    "href": "TalkC.html#c-models",
+    "title": "Let’s Talk C Here",
+    "section": "",
+    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits:\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
   },
   {
     "objectID": "TalkC.html#project-2",
