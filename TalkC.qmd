@@ -10,7 +10,7 @@ Researchers developed three ways for predicting global GPP!
 
     Methods: Compute GPP based on complex process-based algorithms
 
-    Benefits:
+    Benefits: lalala
 
     Limitations:
 
