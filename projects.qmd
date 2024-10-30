@@ -2,7 +2,9 @@
 title: "Projects"
 ---
 
-## Project 1
+## Principles for satellite monitoring of vegetation carbon uptake 
+Read on 2024/10/30, https://doi.org/10.1038/s43017-024-00601-6
+
 
 ## Project 2
 
