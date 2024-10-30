@@ -1,0 +1,13 @@
+---
+title: "C in Remote Sensing"
+---
+
+## Principles for satellite monitoring of vegetation carbon uptake (Prentice etal., 2024)
+Read on 2024/10/30, check the paper here: https://doi.org/10.1038/s43017-024-00601-6
+
+### Summary
+
+
+## Project 2
+
+## Project 3
