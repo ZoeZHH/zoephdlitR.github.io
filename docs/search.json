@@ -74,7 +74,7 @@
     "href": "Terminology.html#remote-sensing",
     "title": "Terminology",
     "section": "Remote Sensing",
-    "text": "Remote Sensing\n\nNormalized Difference Vegetation Index (NDVI) first introduced by Rousie and his colleagues in “Monitoring Vegetation Systems in the Great Plains with ERTS”, defined as \\(NDVI = (NIR-RED)/(NIR+RED)\\). Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?"
+    "text": "Remote Sensing\n\nNormalized Difference Vegetation Index (NDVI) first introduced by Rousie and his colleagues in “Monitoring Vegetation Systems in the Great Plains with ERTS”, defined as \\[NDVI = (NIR-RED)/(NIR+RED) = [\\rho(0.86\\mu m)-\\rho(0.66\\mu m)] / [\\rho(0.86\\mu m)+\\rho(0.66\\mu m)]\\], where \\(\\rho\\) represents the radiance in reflectance units. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?\nNormalized Difference Water Index (NDWI) introduced by Gao in 1996, defined as \\[NDWI = (NIR-SWIR)/(NIR+SWIR) = [\\rho(0.86\\mu m)-\\rho(1.24\\mu m)] / [\\rho(0.86\\mu m)+\\rho(1.24\\mu m)]\\]. Absorption by vegetation liquid water near \\(0.86\\mu m\\) is negligible and weak liquid absorption at \\(1.24\\mu m\\)."
   },
   {
     "objectID": "EC Partitioning.html",
@@ -91,11 +91,11 @@
     "text": "The CO2 analyzer is measuring CO2 flux or what we called net ecosystem exchange (FCO2 or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as \\(NEE = Reco - GPP\\). Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis (Burba, 2022).\nThere are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) (Burba, 2022).\nhttps://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x"
   },
   {
-    "objectID": "EC Partitioning.html#partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018",
-    "href": "EC Partitioning.html#partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018",
+    "objectID": "EC Partitioning.html#partitioning-with-reddyproc",
+    "href": "EC Partitioning.html#partitioning-with-reddyproc",
     "title": "EC Partitioning",
-    "section": "Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018",
-    "text": "Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018\n\nSummary"
+    "section": "Partitioning with REddyProc",
+    "text": "Partitioning with REddyProc\n(Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018\n\nSummary"
   },
   {
     "objectID": "EC Partitioning.html#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997",

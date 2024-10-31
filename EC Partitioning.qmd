@@ -10,7 +10,8 @@ There are mainly two groups of NEE partitioning: one group methods are empirical
 
 <https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x>
 
-## Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
+## Partitioning with REddyProc 
+(Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
 
 ### Summary
 
