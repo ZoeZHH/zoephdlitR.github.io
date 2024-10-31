@@ -2,14 +2,20 @@
 title: "EC Partitioning"
 ---
 
-## Principles for satellite monitoring of vegetation carbon uptake (Prentice et al., 2024)
-Read from 2024/10/30 to , check the paper here: https://doi.org/10.1038/s43017-024-00601-6
+## A story of Partitioning
+
+The CO~2~ analyzer is measuring CO~2~ flux or what we called net ecosystem exchange (F~CO2~ or NEE), it's essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as $NEE = Reco - GPP$. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
+
+There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
+
+<https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x>
+
+## Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
 
 ### Summary
 
-
 ## Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)
-Read from 2024/10/30 to , check the paper here: 10.1109/36.649788
 
+Read from 2024/10/30 to , check the paper here: 10.1109/36.649788
 
 ## Project 3

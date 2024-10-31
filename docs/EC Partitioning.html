@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -125,7 +154,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024" id="toc-principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024" class="nav-link active" data-scroll-target="#principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024">Principles for satellite monitoring of vegetation carbon uptake (Prentice et al., 2024)</a>
+  <li><a href="#a-story-of-partitioning" id="toc-a-story-of-partitioning" class="nav-link active" data-scroll-target="#a-story-of-partitioning">A story of Partitioning</a></li>
+  <li><a href="#partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018" id="toc-partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018" class="nav-link" data-scroll-target="#partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018">Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018</a>
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
@@ -156,9 +186,14 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024" class="level2">
-<h2 class="anchored" data-anchor-id="principles-for-satellite-monitoring-of-vegetation-carbon-uptake-prentice-et-al.-2024">Principles for satellite monitoring of vegetation carbon uptake (Prentice et al., 2024)</h2>
-<p>Read from 2024/10/30 to , check the paper here: https://doi.org/10.1038/s43017-024-00601-6</p>
+<section id="a-story-of-partitioning" class="level2">
+<h2 class="anchored" data-anchor-id="a-story-of-partitioning">A story of Partitioning</h2>
+<p>The CO<sub>2</sub> analyzer is measuring CO<sub>2</sub> flux or what we called net ecosystem exchange (F<sub>CO2</sub> or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as <span class="math inline">\(NEE = Reco - GPP\)</span>. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
+<p>There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
+<p><a href="https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x" class="uri">https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x</a></p>
+</section>
+<section id="partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018" class="level2">
+<h2 class="anchored" data-anchor-id="partitioning-with-reddyproc-wutzler-et-al.-2018-read-from-20241031-to-check-the-paper-here-httpsdoi.org10.5194bg-15-5015-2018">Partitioning with REddyProc (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018</h2>
 <section id="summary" class="level3">
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
 </section>
