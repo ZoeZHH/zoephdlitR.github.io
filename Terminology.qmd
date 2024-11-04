@@ -4,6 +4,8 @@ title: "Terminology"
 
 ## C Related
 
+-   Carbon Fertilization Effects: refer to the phenomenon where elevated concentrations of carbon dioxide (CO2) in the atmosphere stimulate plant growth and increase photosynthesis. This effect is based on the role of CO2 as a critical substrate in the process of photosynthesis, which plants use to produce energy and biomass.
+
 ## Plants Related
 
 -   Leaf area index (LAI): one-sided green leaf area per unit ground area

@@ -8,9 +8,20 @@ The CO~2~ analyzer is measuring CO~2~ flux or what we called net ecosystem excha
 
 There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
 
-<https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x>
+Random thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?
 
-## Partitioning with REddyProc 
+CO2 analyzers are designed due to eddies, understandable. Reco can't be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ........
+
+<https://www.bgc-jena.mpg.de/5624848/Flux-partitioning>
+
+## On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm
+
+From 2024/11/01 to , check the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x): doi: 10.1111/j.1365-2486.2005.001002.x
+
+Main Research Question: analyse the effect of short-term vs. long-term temperature sensitivity on the estimation of daytime Reco and GPP. (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)
+
+## Partitioning with REddyProc
+
 (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
 
 ### Summary
@@ -19,4 +30,20 @@ There are mainly two groups of NEE partitioning: one group methods are empirical
 
 Read from 2024/10/30 to , check the paper here: 10.1109/36.649788
 
-## Project 3
+## On the temperature dependence of soil respiration (Lloyd & Taylor, 1994)
+
+From 2024/11/01 to , check the [paper](https://www.jstor.org/stable/2389824)
+
+Research Qs:
+
+-   Rx​ reflects the **baseline respiration rate** that is influenced by ecosystem factors like MMM.
+
+-   f(T) captures the **temperature sensitivity** in a generalized form that applies across datasets.
+
+[Van't Hoff in 1898](https://archive.org/details/lecturesontheore0000drjh/page/226/mode/2up) (p226-228) observed from the data he collected for T (temperature) vs k (reaction rate constant), for many chemical reactions, the k typically increases by a factor of 2 to 3 for every 10°C increase in temperature. This is in exponential relationship. To further test if reaction rates are in certain times for 10°C intervals, we used: $log_{10}k = a +bt$ & $(k_{t+10})/k_t = 10^{10b}$
+
+This make us available to calculate any ratios, such as for ethyl acetate: 9.4°C k=2.307 & 44.94°C k=21.648, sub to $log_{10}k = a +bt$, we are able to calculate b and then $10^{10b}$ to get the ratios.
+
+The idea posted by Van't Hoff was further widely used in ecology study.
+
+Arrhenius (1889) further derived the rate equation
