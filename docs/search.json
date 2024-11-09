@@ -21,11 +21,11 @@
     "text": "Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)\nRead from 2024/10/30 to , check the paper here: 10.1109/36.649788"
   },
   {
-    "objectID": "RemoteSensing.html#project-3",
-    "href": "RemoteSensing.html#project-3",
+    "objectID": "RemoteSensing.html#global-patterns-of-land-atmosphere-fluxes-of-carbon-dioxide-latent-heat-and-xxx-june-et-al.-2011",
+    "href": "RemoteSensing.html#global-patterns-of-land-atmosphere-fluxes-of-carbon-dioxide-latent-heat-and-xxx-june-et-al.-2011",
     "title": "C in Remote Sensing",
-    "section": "Project 3",
-    "text": "Project 3"
+    "section": "Global Patterns of land-atmosphere fluxes of carbon dioxide, latent heat, and xxx (June et al., 2011)",
+    "text": "Global Patterns of land-atmosphere fluxes of carbon dioxide, latent heat, and xxx (June et al., 2011)"
   },
   {
     "objectID": "index.html",
@@ -33,6 +33,34 @@
     "title": "About Me",
     "section": "",
     "text": "Thanks for checking out my web site!"
+  },
+  {
+    "objectID": "Terminology.html",
+    "href": "Terminology.html",
+    "title": "Terminology",
+    "section": "",
+    "text": "Carbon Fertilization Effects: refer to the phenomenon where elevated concentrations of carbon dioxide (CO2) in the atmosphere stimulate plant growth and increase photosynthesis. This effect is based on the role of CO2 as a critical substrate in the process of photosynthesis, which plants use to produce energy and biomass."
+  },
+  {
+    "objectID": "Terminology.html#c-related",
+    "href": "Terminology.html#c-related",
+    "title": "Terminology",
+    "section": "",
+    "text": "Carbon Fertilization Effects: refer to the phenomenon where elevated concentrations of carbon dioxide (CO2) in the atmosphere stimulate plant growth and increase photosynthesis. This effect is based on the role of CO2 as a critical substrate in the process of photosynthesis, which plants use to produce energy and biomass."
+  },
+  {
+    "objectID": "Terminology.html#plants-related",
+    "href": "Terminology.html#plants-related",
+    "title": "Terminology",
+    "section": "Plants Related",
+    "text": "Plants Related\n\nLeaf area index (LAI): one-sided green leaf area per unit ground area\nFraction of absorbed photosynthetic active radiation (FAPAR): fraction of photosynthetic active radiation (0.4–0.7um) absorbed by the vegetation"
+  },
+  {
+    "objectID": "Terminology.html#remote-sensing",
+    "href": "Terminology.html#remote-sensing",
+    "title": "Terminology",
+    "section": "Remote Sensing",
+    "text": "Remote Sensing\n\nNormalized Difference Vegetation Index (NDVI) first introduced by Rousie and his colleagues in “Monitoring Vegetation Systems in the Great Plains with ERTS”, defined as \\[NDVI = (NIR-RED)/(NIR+RED) = [\\rho(0.86\\mu m)-\\rho(0.66\\mu m)] / [\\rho(0.86\\mu m)+\\rho(0.66\\mu m)]\\], where \\(\\rho\\) represents the radiance in reflectance units. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?\nNormalized Difference Water Index (NDWI) introduced by Gao in 1996, defined as \\[NDWI = (NIR-SWIR)/(NIR+SWIR) = [\\rho(0.86\\mu m)-\\rho(1.24\\mu m)] / [\\rho(0.86\\mu m)+\\rho(1.24\\mu m)]\\]. Absorption by vegetation liquid water near \\(0.86\\mu m\\) is negligible and weak liquid absorption at \\(1.24\\mu m\\)."
   },
   {
     "objectID": "TalkC.html",
@@ -63,32 +91,39 @@
     "text": "Project 3"
   },
   {
-    "objectID": "Terminology.html#plants-related",
-    "href": "Terminology.html#plants-related",
-    "title": "Terminology",
-    "section": "Plants Related",
-    "text": "Plants Related\n\nLeaf area index (LAI): one-sided green leaf area per unit ground area\nFraction of absorbed photosynthetic active radiation (FAPAR): fraction of photosynthetic active radiation (0.4–0.7um) absorbed by the vegetation"
+    "objectID": "C Models.html",
+    "href": "C Models.html",
+    "title": "C Models",
+    "section": "",
+    "text": "From 2024/11/09 to , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
   },
   {
-    "objectID": "Terminology.html#remote-sensing",
-    "href": "Terminology.html#remote-sensing",
-    "title": "Terminology",
-    "section": "Remote Sensing",
-    "text": "Remote Sensing\n\nNormalized Difference Vegetation Index (NDVI) first introduced by Rousie and his colleagues in “Monitoring Vegetation Systems in the Great Plains with ERTS”, defined as \\[NDVI = (NIR-RED)/(NIR+RED) = [\\rho(0.86\\mu m)-\\rho(0.66\\mu m)] / [\\rho(0.86\\mu m)+\\rho(0.66\\mu m)]\\], where \\(\\rho\\) represents the radiance in reflectance units. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?\nNormalized Difference Water Index (NDWI) introduced by Gao in 1996, defined as \\[NDWI = (NIR-SWIR)/(NIR+SWIR) = [\\rho(0.86\\mu m)-\\rho(1.24\\mu m)] / [\\rho(0.86\\mu m)+\\rho(1.24\\mu m)]\\]. Absorption by vegetation liquid water near \\(0.86\\mu m\\) is negligible and weak liquid absorption at \\(1.24\\mu m\\)."
+    "objectID": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
+    "href": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
+    "title": "C Models",
+    "section": "",
+    "text": "From 2024/11/09 to , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
   },
   {
     "objectID": "EC Partitioning.html",
     "href": "EC Partitioning.html",
     "title": "EC Partitioning",
     "section": "",
-    "text": "The CO2 analyzer is measuring CO2 flux or what we called net ecosystem exchange (FCO2 or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as \\(NEE = Reco - GPP\\). Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis (Burba, 2022).\nThere are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) (Burba, 2022).\nhttps://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x"
+    "text": "The CO2 analyzer is measuring CO2 flux or what we called net ecosystem exchange (FCO2 or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as \\(NEE = Reco - GPP\\). Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis (Burba, 2022).\nThere are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) (Burba, 2022).\nRandom thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?\nCO2 analyzers are designed due to eddies, understandable. Reco can’t be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ……..\nhttps://www.bgc-jena.mpg.de/5624848/Flux-partitioning"
   },
   {
     "objectID": "EC Partitioning.html#a-story-of-partitioning",
     "href": "EC Partitioning.html#a-story-of-partitioning",
     "title": "EC Partitioning",
     "section": "",
-    "text": "The CO2 analyzer is measuring CO2 flux or what we called net ecosystem exchange (FCO2 or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as \\(NEE = Reco - GPP\\). Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis (Burba, 2022).\nThere are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) (Burba, 2022).\nhttps://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x"
+    "text": "The CO2 analyzer is measuring CO2 flux or what we called net ecosystem exchange (FCO2 or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as \\(NEE = Reco - GPP\\). Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis (Burba, 2022).\nThere are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) (Burba, 2022).\nRandom thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?\nCO2 analyzers are designed due to eddies, understandable. Reco can’t be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ……..\nhttps://www.bgc-jena.mpg.de/5624848/Flux-partitioning"
+  },
+  {
+    "objectID": "EC Partitioning.html#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm",
+    "href": "EC Partitioning.html#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm",
+    "title": "EC Partitioning",
+    "section": "On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm",
+    "text": "On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm\nFrom 2024/11/01 to , check the paper here: doi: 10.1111/j.1365-2486.2005.001002.x\nMain Research Question: analyse the effect of short-term vs. long-term temperature sensitivity on the estimation of daytime Reco and GPP. (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)"
   },
   {
     "objectID": "EC Partitioning.html#partitioning-with-reddyproc",
@@ -105,10 +140,10 @@
     "text": "Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)\nRead from 2024/10/30 to , check the paper here: 10.1109/36.649788"
   },
   {
-    "objectID": "EC Partitioning.html#project-3",
-    "href": "EC Partitioning.html#project-3",
+    "objectID": "EC Partitioning.html#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994",
+    "href": "EC Partitioning.html#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994",
     "title": "EC Partitioning",
-    "section": "Project 3",
-    "text": "Project 3"
+    "section": "On the temperature dependence of soil respiration (Lloyd & Taylor, 1994)",
+    "text": "On the temperature dependence of soil respiration (Lloyd & Taylor, 1994)\nFrom 2024/11/01 to , check the paper\nResearch Qs:\n\nRx​ reflects the baseline respiration rate that is influenced by ecosystem factors like MMM.\nf(T) captures the temperature sensitivity in a generalized form that applies across datasets.\n\nVan’t Hoff in 1898 (p226-228) observed from the data he collected for T (temperature) vs k (reaction rate constant), for many chemical reactions, the k typically increases by a factor of 2 to 3 for every 10°C increase in temperature. This is in exponential relationship. To further test if reaction rates are in certain times for 10°C intervals, we used: \\(log_{10}k = a +bt\\) & \\((k_{t+10})/k_t = 10^{10b}\\)\nThis make us available to calculate any ratios, such as for ethyl acetate: 9.4°C k=2.307 & 44.94°C k=21.648, sub to \\(log_{10}k = a +bt\\), we are able to calculate b and then \\(10^{10b}\\) to get the ratios.\nThe idea posted by Van’t Hoff was further widely used in ecology study.\nArrhenius (1889) further derived the rate equation"
   }
 ]

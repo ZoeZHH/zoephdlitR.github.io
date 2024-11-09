@@ -1,0 +1,31 @@
+---
+title: "C Models"
+---
+
+## Why models underestimate West African tropical forest primary productivity
+
+2024/11/09 , check the paper [here](https://www.nature.com/articles/s41467-024-53949-0): doi: https://doi.org/10.1038/s41467-024-53949-0
+
+Main Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy.  In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity. 
+
+
+Objective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy
+Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products.
+DGVM > FLUXCOM > MODIS
+
+Objective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models
+discrepency but within the uncertainty range, objective 3 is more important to note it
+
+Objective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on **Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables**
+
+Hypothesis 1 - incorrect LUE, or photosynthetic capacity
+PPFD could not explain the underestimation of GPP at the study sites
+
+Hypothesis 2 - incorrect fAPAR **\[Accepted\]** 
+GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)
+
+Hypothesis 3 - inappropriate assignments of plant functional types  **\[Rejected\]** 
+Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues
+
+Hypothesis 4 - climate variable **\[Rejected\]** 
+The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4

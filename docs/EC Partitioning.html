@@ -136,6 +136,10 @@ window.Quarto = {
     <a class="nav-link active" href="./EC Partitioning.html" aria-current="page"> 
 <span class="menu-text">EC Partitioning</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./C Models.html"> 
+<span class="menu-text">C Models</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -155,12 +159,13 @@ window.Quarto = {
    
   <ul>
   <li><a href="#a-story-of-partitioning" id="toc-a-story-of-partitioning" class="nav-link active" data-scroll-target="#a-story-of-partitioning">A story of Partitioning</a></li>
+  <li><a href="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm" id="toc-on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm" class="nav-link" data-scroll-target="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm</a></li>
   <li><a href="#partitioning-with-reddyproc" id="toc-partitioning-with-reddyproc" class="nav-link" data-scroll-target="#partitioning-with-reddyproc">Partitioning with REddyProc</a>
   <ul class="collapse">
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
   <li><a href="#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997" id="toc-estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997" class="nav-link" data-scroll-target="#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997">Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)</a></li>
-  <li><a href="#project-3" id="toc-project-3" class="nav-link" data-scroll-target="#project-3">Project 3</a></li>
+  <li><a href="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" id="toc-on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" class="nav-link" data-scroll-target="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994)</a></li>
   </ul>
 </nav>
     </div>
@@ -190,7 +195,14 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="a-story-of-partitioning">A story of Partitioning</h2>
 <p>The CO<sub>2</sub> analyzer is measuring CO<sub>2</sub> flux or what we called net ecosystem exchange (F<sub>CO2</sub> or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as <span class="math inline">\(NEE = Reco - GPP\)</span>. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p>There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
-<p><a href="https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x" class="uri">https://onlinelibrary-wiley-com.libproxy1.nus.edu.sg/doi/full/10.1111/j.1365-2486.2005.001002.x</a></p>
+<p>Random thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?</p>
+<p>CO2 analyzers are designed due to eddies, understandable. Reco can’t be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ……..</p>
+<p><a href="https://www.bgc-jena.mpg.de/5624848/Flux-partitioning" class="uri">https://www.bgc-jena.mpg.de/5624848/Flux-partitioning</a></p>
+</section>
+<section id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm</h2>
+<p>From 2024/11/01 to , check the paper <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x">here</a>: doi: 10.1111/j.1365-2486.2005.001002.x</p>
+<p>Main Research Question: analyse the effect of short-term vs.&nbsp;long-term temperature sensitivity on the estimation of daytime Reco and GPP. (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)</p>
 </section>
 <section id="partitioning-with-reddyproc" class="level2">
 <h2 class="anchored" data-anchor-id="partitioning-with-reddyproc">Partitioning with REddyProc</h2>
@@ -203,8 +215,18 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997">Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)</h2>
 <p>Read from 2024/10/30 to , check the paper here: 10.1109/36.649788</p>
 </section>
-<section id="project-3" class="level2">
-<h2 class="anchored" data-anchor-id="project-3">Project 3</h2>
+<section id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994)</h2>
+<p>From 2024/11/01 to , check the <a href="https://www.jstor.org/stable/2389824">paper</a></p>
+<p>Research Qs:</p>
+<ul>
+<li><p>Rx​ reflects the <strong>baseline respiration rate</strong> that is influenced by ecosystem factors like MMM.</p></li>
+<li><p>f(T) captures the <strong>temperature sensitivity</strong> in a generalized form that applies across datasets.</p></li>
+</ul>
+<p><a href="https://archive.org/details/lecturesontheore0000drjh/page/226/mode/2up">Van’t Hoff in 1898</a> (p226-228) observed from the data he collected for T (temperature) vs k (reaction rate constant), for many chemical reactions, the k typically increases by a factor of 2 to 3 for every 10°C increase in temperature. This is in exponential relationship. To further test if reaction rates are in certain times for 10°C intervals, we used: <span class="math inline">\(log_{10}k = a +bt\)</span> &amp; <span class="math inline">\((k_{t+10})/k_t = 10^{10b}\)</span></p>
+<p>This make us available to calculate any ratios, such as for ethyl acetate: 9.4°C k=2.307 &amp; 44.94°C k=21.648, sub to <span class="math inline">\(log_{10}k = a +bt\)</span>, we are able to calculate b and then <span class="math inline">\(10^{10b}\)</span> to get the ratios.</p>
+<p>The idea posted by Van’t Hoff was further widely used in ecology study.</p>
+<p>Arrhenius (1889) further derived the rate equation</p>
 
 
 </section>
