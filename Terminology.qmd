@@ -12,6 +12,8 @@ title: "Terminology"
 
 -   Fraction of absorbed photosynthetic active radiation (FAPAR): fraction of photosynthetic active radiation (0.4–0.7um) absorbed by the vegetation
 
+-   Solar-induced chlorophyll fluorescence (SIF) is a faint light emitted by chlorophyll molecules during photosynthesis.
+
 ## Remote Sensing
 
 -   [Normalized Difference Vegetation Index (NDVI)](https://hakimabdi.com/blog/birth-of-the-normalized-difference-vegetation-index-and-the-paradigm-shift-in-satellite-remote-sensing-of-the-environment) first introduced by Rousie and his colleagues in “[*Monitoring Vegetation Systems in the Great Plains with ERTS*](https://ntrs.nasa.gov/api/citations/19740022614/downloads/19740022614.pdf)”, defined as $$NDVI = (NIR-RED)/(NIR+RED) = [\rho(0.86\mu m)-\rho(0.66\mu m)] / [\rho(0.86\mu m)+\rho(0.66\mu m)]$$, where $\rho$ represents the radiance in reflectance units. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs. sunny day?
