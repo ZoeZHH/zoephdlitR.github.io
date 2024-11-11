@@ -14,6 +14,7 @@ website:
       - RemoteSensing.qmd
       - EC Partitioning.qmd
       - C Models.qmd
+      - Others.qmd
     tools:
       - icon: twitter
         href: https://twitter.com/
