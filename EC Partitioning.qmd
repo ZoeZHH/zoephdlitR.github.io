@@ -40,7 +40,33 @@ Research Qs:
 
 -   f(T) captures the **temperature sensitivity** in a generalized form that applies across datasets.
 
-[Van't Hoff in 1898](https://archive.org/details/lecturesontheore0000drjh/page/226/mode/2up) (p226-228) observed from the data he collected for T (temperature) vs k (reaction rate constant), for many chemical reactions, the k typically increases by a factor of 2 to 3 for every 10°C increase in temperature. This is in exponential relationship. To further test if reaction rates are in certain times for 10°C intervals, we used: $log_{10}k = a +bt$ & $(k_{t+10})/k_t = 10^{10b}$
+1884 Van't Hoff derivative of the natural logarithm of the reaction rate constant (lnk) with respect to temperature (T). Van’t Hoff observed that the rate of chemical reactions changes exponentially with temperature. And the derivative of it in linear relationship. $$\frac{d(\ln k)}{dT} = \frac{E}{\mathcal{R}T^2} + c$$
+
+1889 Arrhenius built on van’t Hoff’s observations and incorporated the concept of energy distribution among reacting molecules (based on Boltzmann's statistical mechanics). He simplified van’t Hoff’s equation by assuming c=0 and **integrating** it into a simpler form to explain reaction kinetics.
+
+$$k = d e^{-\frac{E}{\mathcal{R}T}}$$
+
+Where d is a constant, E is activation energy, T is the absolute temperature (K). But we would like to involve a reference temperature (283.15K), where standardize the temperature dependencies (enables consistent comparisons across data sets, standardizing variation between ecosystems).
+
+$$R = R_{10} e^{\frac{E}{\mathcal{R} \cdot 283.15} \left(1 - \frac{283.15}{T}\right)}$$
+
+Soil respiration involves changing populations of many different organisms, each undergoing a complex series of reactions, which is likely that the activation energies may indeed increase with decreasing temperature. Kavanau (1951) utilized kinetic theory to derive a semi-empirical formulation that effectively gives a decrease in activation energy with increasing temperature.
+
+$$k_R = P \left[1 - e^{-\frac{E_0}{T - T_0}}\right]$$
+
+A simplified version:
+
+$$
+R = A e^{-\frac{E_0}{T - T_0}}
+$$
+
+Final form relative to 10 celsius degree:
+
+$$R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}$$
+
+This equation indeed used to calculate Reco at night for nighttime partitioning method.
+
+1898 Q10: [Van't Hoff in 1898](https://archive.org/details/lecturesontheore0000drjh/page/226/mode/2up) (p226-228) observed from the data he collected for T (temperature) vs k (reaction rate constant), for many chemical reactions, the k typically increases by a factor of 2 to 3 for every 10°C increase in temperature \[T VS. Reaction Rates\]. This is in exponential relationship. To further test if reaction rates are in certain times for 10°C intervals, we used: $log_{10}k = a +bt$ & $(k_{t+10})/k_t = 10^{10b}$
 
 This make us available to calculate any ratios, such as for ethyl acetate: 9.4°C k=2.307 & 44.94°C k=21.648, sub to $log_{10}k = a +bt$, we are able to calculate b and then $10^{10b}$ to get the ratios.
 
