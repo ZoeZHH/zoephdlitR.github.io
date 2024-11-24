@@ -66,7 +66,7 @@ This make us available to calculate any ratios, such as for ethyl acetate: 9.4°
 
 The idea posted by Van't Hoff was further widely used in ecology study.
 
-## On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm
+## On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2015)
 
 From 2024/11/24 to , check the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x): doi: 10.1111/j.1365-2486.2005.001002.x
 
