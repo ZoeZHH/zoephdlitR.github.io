@@ -24,7 +24,7 @@ CO2 analyzers are designed due to eddies, understandable. Reco can't be measured
 
 Read from 2024/10/30 to , check the paper here: 10.1109/36.649788
 
-## On the temperature dependence of soil respiration (Lloyd & Taylor, 1994)
+## On the temperature dependence of soil respiration (Lloyd & Taylor, 1994) - Nighttime Partitioning
 
 From 2024/11/01 to , check the [paper](https://www.jstor.org/stable/2389824)
 
