@@ -14,12 +14,6 @@ CO2 analyzers are designed due to eddies, understandable. Reco can't be measured
 
 <https://www.bgc-jena.mpg.de/5624848/Flux-partitioning>
 
-## On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm
-
-From 2024/11/01 to , check the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x): doi: 10.1111/j.1365-2486.2005.001002.x
-
-Main Research Question: analyse the effect of short-term vs. long-term temperature sensitivity on the estimation of daytime Reco and GPP. (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)
-
 ## Partitioning with REddyProc
 
 (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
@@ -60,7 +54,7 @@ $$
 R = A e^{-\frac{E_0}{T - T_0}}
 $$
 
-Final form relative to 10 celsius degree:
+Final form relative to 10 celsius degree by Lloyd & Taylor, 1994:
 
 $$R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}$$
 
@@ -72,4 +66,22 @@ This make us available to calculate any ratios, such as for ethyl acetate: 9.4°
 
 The idea posted by Van't Hoff was further widely used in ecology study.
 
-Arrhenius (1889) further derived the rate equation
+## On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm
+
+From 2024/11/24 to , check the paper [here](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x): doi: 10.1111/j.1365-2486.2005.001002.x
+
+Main Research Question: analyse the effect of short-term vs. long-term temperature sensitivity on the estimation of daytime Reco and GPP.
+
+-   (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)
+
+Improved Algorithm:
+
+-   Collect half-hourly eddy covariance flux data, ensuring high-quality night-time data through a turbulence filtering threshold.
+
+-   Segment the data into 15-day windows, with a 10-day overlap between consecutive windows.
+
+-   Perform short-term regressions within each window to estimate temperature sensitivity (E0).
+
+-   Linearly interpolate Rref based on estimates from 4-day periods and integrate E0, short into respiration calculations.
+
+-   Use the improved algorithm to partition NEE into GEP and Reco while addressing biases from long-term temperature sensitivity.

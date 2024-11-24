@@ -1,17 +1,54 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
 
-2024/11/08 How to write a proposal: https://franciskadevries.wordpress.com/2022/01/16/my-recipe-for-a-proposal%ef%bf%bc/
+2024/11/08 How to write a proposal:
+https://franciskadevries.wordpress.com/2022/01/16/my-recipe-for-a-proposal%ef%bf%bc/
 
-2024/11/11 Proposal Questions Record: Long-term monitoring of element cycles and surface energy budgets in tropical urban and natural ecosystems in Singapore
-1)	Interdisciplinary. How does this research help Singapore? People might not understand the importance of it. 
-Answer: Singapore aims for carbon neutral by 2050. We don’t have knowledge in tropical forests.
-2)	The concept between accounting C and C fluxes
-Answer: Savings vs. Investing
-3)	Water part? How understanding of the watershed monitoring to help?
-4)	How sites data complement model prediction and validation?
-5)	The possibility of erecting a high flux tower (>40m might be too high, flight restriction)
--	Is the proposed site the best site?
--	Who take control on constructions? NPARKs+VCA+EIA
--	Forest site is hard. Think about existing tower.
-6)	Rationale for grassland site?
-Answer: To understand what happened across Singapore, we need to understand different ecosystems.
--	Can never set a permanent site in grassland
+2024/11/11 Proposal Questions Record: Long-term monitoring of element
+cycles and surface energy budgets in tropical urban and natural
+ecosystems in Singapore 1) Interdisciplinary. How does this research
+help Singapore? People might not understand the importance of it.
+Answer: Singapore aims for carbon neutral by 2050. We don’t have
+knowledge in tropical forests. 2) The concept between accounting C and C
+fluxes Answer: Savings vs. Investing 3) Water part? How understanding of
+the watershed monitoring to help? 4) How sites data complement model
+prediction and validation? 5) The possibility of erecting a high flux
+tower (\>40m might be too high, flight restriction) - Is the proposed
+site the best site? - Who take control on constructions?
+NPARKs+VCA+EIA - Forest site is hard. Think about existing tower. 6)
+Rationale for grassland site? Answer: To understand what happened across
+Singapore, we need to understand different ecosystems. - Can never set a
+permanent site in grassland
+
+2024/11/23 Notes About Soil Respiration
+
+Soil Respiration components: root respiration, surface-litter
+respiration and the respiration of soil organic matter (including root
+detritus)
+
+-   Lowest soil respiration occur in coldest (tundra & northern bogs)
+    and driest (deserts) biomes, highest in tropical moist forests where
+    both T and moisture availability are high year-round
+
+    -   Soil respiration rates in northern peatlands were shown to be
+        positively correlated with depth to water table by Moore and
+        Knowles (1989) and Luken and Billings (1985)
+
+-   Soil respiration rates are positively correlated with mean annual
+    air T and mean annual precipitation
+
+For soil respiration studies Q10 values cited range from 1.3 to 3.3
+(Reich & Schlesinger 1992). Based on a review of in situ measurements,
+the Q10 value for total soil respiration has a median value of 2.4.
+
+The **turnover time** of soil carbon refers to the average time that
+carbon remains in the soil before being released back into the
+atmosphere as carbon dioxide through decomposition. = soil carbon pool /
+soil respiration rate from the decomposition of soil organic matter (if
+with assumption live root contribute 30%, then you get soil R \* 0.70
+for soil organic matter decomposition)
+
+Discussion: Ecosystem respiration, collar heights
