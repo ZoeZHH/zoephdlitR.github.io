@@ -119,3 +119,7 @@ $\beta \, (\mu\text{mol C m}^{-2} \text{s}^{-1})$ is the maximum CO2 uptake rate
 $\gamma \, (\mu\text{mol C m}^{-2} \text{s}^{-1})$ is the ecosystem respiration
 
 $R_g \, ({W m}^{-2})$ is the global radiation
+
+Gilmanov et al. (2003) consider the temperature sensitivity of the Reco, thus combined with Llyod & Taylor (1994), then:
+
+$$\begin{equation}\mathrm{NEE} = \frac{\alpha \beta R_g}{\alpha R_g + \beta} + R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\end{equation}$$
