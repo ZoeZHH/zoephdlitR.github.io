@@ -8,10 +8,6 @@ The CO~2~ analyzer is measuring CO~2~ flux or what we called net ecosystem excha
 
 There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
 
-Random thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?
-
-CO2 analyzers are designed due to eddies, understandable. Reco can't be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ........
-
 <https://www.bgc-jena.mpg.de/5624848/Flux-partitioning>
 
 ## Partitioning with REddyProc
