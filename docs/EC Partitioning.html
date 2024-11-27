@@ -168,8 +168,8 @@ window.Quarto = {
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
   </ul></li>
   <li><a href="#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997" id="toc-estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997" class="nav-link" data-scroll-target="#estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997">Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)</a></li>
-  <li><a href="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" id="toc-on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" class="nav-link" data-scroll-target="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994)</a></li>
-  <li><a href="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2015" id="toc-on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2015" class="nav-link" data-scroll-target="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2015">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2015)</a></li>
+  <li><a href="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning" id="toc-on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning" class="nav-link" data-scroll-target="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994) - Nighttime Partitioning</a></li>
+  <li><a href="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005" id="toc-on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005" class="nav-link" data-scroll-target="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2005)</a></li>
   </ul>
 </nav>
     </div>
@@ -199,8 +199,6 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="a-story-of-partitioning">A story of Partitioning</h2>
 <p>The CO<sub>2</sub> analyzer is measuring CO<sub>2</sub> flux or what we called net ecosystem exchange (F<sub>CO2</sub> or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as <span class="math inline">\(NEE = Reco - GPP\)</span>. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p>There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
-<p>Random thoughts: When talk about partitioning and check into these papers, researchers are trying hard on identifying the best way for partitioning and estimating GPP and Reco accurately. My random thought is: why partitioning? why not designing sensors on measuring GPP?</p>
-<p>CO2 analyzers are designed due to eddies, understandable. Reco can’t be measured, which require no sunlight for the ecosystem, understandable. But, anyways for measuring GPP directly? ……..</p>
 <p><a href="https://www.bgc-jena.mpg.de/5624848/Flux-partitioning" class="uri">https://www.bgc-jena.mpg.de/5624848/Flux-partitioning</a></p>
 </section>
 <section id="partitioning-with-reddyproc" class="level2">
@@ -214,8 +212,8 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="estimation-of-global-lai-and-fapar-using-radiative-transfer-models-myneni-et-al.-1997">Estimation of global LAI and FAPAR using radiative transfer models (Myneni et al., 1997)</h2>
 <p>Read from 2024/10/30 to , check the paper here: 10.1109/36.649788</p>
 </section>
-<section id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994" class="level2">
-<h2 class="anchored" data-anchor-id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994)</h2>
+<section id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994) - Nighttime Partitioning</h2>
 <p>From 2024/11/01 to , check the <a href="https://www.jstor.org/stable/2389824">paper</a></p>
 <p>Research Qs:</p>
 <ul>
@@ -240,8 +238,8 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <p>This make us available to calculate any ratios, such as for ethyl acetate: 9.4°C k=2.307 &amp; 44.94°C k=21.648, sub to <span class="math inline">\(log_{10}k = a +bt\)</span>, we are able to calculate b and then <span class="math inline">\(10^{10b}\)</span> to get the ratios.</p>
 <p>The idea posted by Van’t Hoff was further widely used in ecology study.</p>
 </section>
-<section id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2015" class="level2">
-<h2 class="anchored" data-anchor-id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2015">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2015)</h2>
+<section id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2005)</h2>
 <p>From 2024/11/24 to , check the paper <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x">here</a>: doi: 10.1111/j.1365-2486.2005.001002.x</p>
 <p>Main Research Question: analyse the effect of short-term vs.&nbsp;long-term temperature sensitivity on the estimation of daytime Reco and GPP.</p>
 <ul>
@@ -255,6 +253,25 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <li><p>Linearly interpolate Rref based on estimates from 4-day periods and integrate E0, short into respiration calculations.</p></li>
 <li><p>Use the improved algorithm to partition NEE into GEP and Reco while addressing biases from long-term temperature sensitivity.</p></li>
 </ul>
+<p>The paper for REddyProc package: <a href="https://bg.copernicus.org/articles/15/5015/2018/" class="uri">https://bg.copernicus.org/articles/15/5015/2018/</a></p>
+<p>Daytime flux partitioning method -&gt; Lasslop et al.&nbsp;(2010)</p>
+<p>Light–response curves are fit to daytime NEE measurements and respiration is estimated from the intercept of the ordinate, which avoids the use of potentially problematic nighttime data.</p>
+<p>Falge et al.&nbsp;(2001)</p>
+<p>Biases of nighttime partitioning methods:</p>
+<p>Lasslop et al.&nbsp;(2010)</p>
+<p>Methods that rely on nighttime data for partitioning may be biased due to the frequent nighttime suppression of turbulence and dominance of advective fluxes not measured by conventional EC systems (Goulden et al., 1996; Aubinet et al., 2000; Feigenwinter et al., 2004; Aubinet, 2008).</p>
+<p>Daytime data-based estimate including temperature sensitivity of respiration.</p>
+<p><a href="https://www.chem.uwec.edu/Chem352_F18/pages/readings/media/Michaelis_&amp;_Menton_1913.pdf">(Michaelis and Menten, 1913</a>) examines the concentration of sucrose affects the rate of its enzymatic inversion, models how reaction velocity (rate of product formation) depends on the substrate concentration. Which expresses reaction rate as a hyperbolic function:</p>
+<p><span class="math display">\[v = \frac{V_{\text{max}}[S]}{K_m + [S]}\]</span></p>
+<p>where <span class="math inline">\(V_{max}\)</span>​ is the maximum rate, [S] is the substrate concentration, and <span class="math inline">\(K_m\)</span>​ is the Michaelis constant (substrate concentration at half-maximum rate).</p>
+<p>Rectangular hyperbolic light-response curve (Falge et al., 2001)</p>
+<p><span class="math display">\[\begin{equation}\mathrm{NEE} = \frac{\alpha \beta R_g}{\alpha R_g + \beta} + \gamma\end{equation}\]</span></p>
+<p><span class="math inline">\(\alpha \, (\mu\text{mol C J}^{-1})\)</span> is the canopy light utilization efficiency and represents the initial slope of the light–response curve</p>
+<p><span class="math inline">\(\beta \, (\mu\text{mol C m}^{-2} \text{s}^{-1})\)</span> is the maximum CO2 uptake rate of the canopy at light saturation</p>
+<p><span class="math inline">\(\gamma \, (\mu\text{mol C m}^{-2} \text{s}^{-1})\)</span> is the ecosystem respiration</p>
+<p><span class="math inline">\(R_g \, ({W m}^{-2})\)</span> is the global radiation</p>
+<p>Gilmanov et al.&nbsp;(2003) consider the temperature sensitivity of the Reco, thus combined with Llyod &amp; Taylor (1994), then:</p>
+<p><span class="math display">\[\begin{equation}\mathrm{NEE} = \frac{\alpha \beta R_g}{\alpha R_g + \beta} + R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\end{equation}\]</span></p>
 
 
 </section>

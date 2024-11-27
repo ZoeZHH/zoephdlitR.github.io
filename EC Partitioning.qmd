@@ -84,7 +84,9 @@ Improved Algorithm:
 
 The paper for REddyProc package: <https://bg.copernicus.org/articles/15/5015/2018/>
 
-Daytime flux partitioning method -\> Lasslop et al. (2010)
+## Daytime flux partitioning method -\> Lasslop et al. (2010)
+
+**Daytime flux partitioning method -\> Lasslop et al. (2010)**
 
 Light–response curves are fit to daytime NEE measurements and respiration is estimated from the intercept of the ordinate, which avoids the use of potentially problematic nighttime data.
 
