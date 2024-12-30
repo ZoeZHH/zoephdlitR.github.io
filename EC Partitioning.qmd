@@ -10,6 +10,16 @@ There are mainly two groups of NEE partitioning: one group methods are empirical
 
 <https://www.bgc-jena.mpg.de/5624848/Flux-partitioning>
 
+Other Possible Ways on measuring Reco:
+
+1\) Estimates from biogeochemical or soil–vegetation–atmosphere transfer (SVAT) models (<https://link.springer.com/article/10.1023/A:1002497616547>)
+
+2\) From chamber measurements extrapolated to the stand scale (<https://doi.org/10.1046/j.1365-2486.1999.00214.x>; <https://pubmed.ncbi.nlm.nih.gov/11262922/>)
+
+Nighttime Partitioning Drawbacks:
+
+1\) frequent nighttime suppression of turbulence and dominance of advective fluxes not measured by conventional EC systems (Lasslop et al., 2010)
+
 ## Partitioning with REddyProc
 
 (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
@@ -68,7 +78,7 @@ From 2024/11/24 to , check the paper [here](https://onlinelibrary.wiley.com/doi/
 
 Main Research Question: analyse the effect of short-term vs. long-term temperature sensitivity on the estimation of daytime Reco and GPP.
 
--   (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)
+-   (The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.o., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)
 
 Improved Algorithm:
 
@@ -81,6 +91,12 @@ Improved Algorithm:
 -   Linearly interpolate Rref based on estimates from 4-day periods and integrate E0, short into respiration calculations.
 
 -   Use the improved algorithm to partition NEE into GEP and Reco while addressing biases from long-term temperature sensitivity.
+
+$$R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}$$
+
+T~0~ is kept constant at -46.02 celsius degrees; T~ref~ is set to 10 celsius degrees in (Reichstein, 2005) and 15 celsius degrees in (Lasslop et al., 2010). E~0~, temperature sensitivity is a constant value used for the whole year in (Lasslop et al., 2010) and in a short periods in (Reichstein, 2005), R~eco,ref~ was estimated every 5 days using a 15 days window.
+
+Using daytime temperature, respiration is extrapolated to the daytime and the difference between modeled R~eco~ and measured NEE yields estimated GPP. We refer to this estimate as ‘NB’ (nighttime data-based).
 
 The paper for REddyProc package: <https://bg.copernicus.org/articles/15/5015/2018/>
 
@@ -121,3 +137,13 @@ $R_g \, ({W m}^{-2})$ is the global radiation
 Gilmanov et al. (2003) consider the temperature sensitivity of the Reco, thus combined with Llyod & Taylor (1994), then:
 
 $$\begin{equation}\mathrm{NEE} = \frac{\alpha \beta R_g}{\alpha R_g + \beta} + R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\end{equation}$$
+
+There are two ways in estimating parameters:
+
+a\) E~0~ was estimated using nighttime data, R~eco,ref~, alpha, beta were derived from daytime data ; b) All parameters were estimated using daytime data.
+
+With the consideration of VPD limitation, β could be further interpreted as with an exponential decreasing function (Korner, 1995)
+
+$$
+\beta =\begin{cases} \beta_0 \exp(-k(\text{VPD} - \text{VPD}_0)), & \text{VPD} > \text{VPD}_0, \\\beta_0, & \text{VPD} \leq \text{VPD}_0.\end{cases}
+$$
