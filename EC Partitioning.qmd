@@ -147,3 +147,13 @@ With the consideration of VPD limitation, β could be further interpreted as wit
 $$
 \beta =\begin{cases} \beta_0 \exp(-k(\text{VPD} - \text{VPD}_0)), & \text{VPD} > \text{VPD}_0, \\\beta_0, & \text{VPD} \leq \text{VPD}_0.\end{cases}
 $$
+
+## Partitioning net carbon dioxide fluxes into photosynthesis and respiration using neural networks -\> (Tramontana et al., 2020)
+
+## **Widespread inhibition of daytime ecosystem respiration (Keenan et al., 2019)**
+
+<https://www.nature.com/articles/s41559-019-0809-2#ref-CR12> With the consideration of the inhibition of leaf respiration in the light
+
+The daytime and nighttime approaches are built on the assumption that the reference respiration rate (*R*~ref~) does not change between night and day. If there's inhibition of leaf respiration in the light, then nighttime method will overestimate daytime respiration and the daytime method will underestimate the nighttime respiration
+
+Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.
