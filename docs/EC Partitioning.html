@@ -171,6 +171,8 @@ window.Quarto = {
   <li><a href="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning" id="toc-on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning" class="nav-link" data-scroll-target="#on-the-temperature-dependence-of-soil-respiration-lloyd-taylor-1994---nighttime-partitioning">On the temperature dependence of soil respiration (Lloyd &amp; Taylor, 1994) - Nighttime Partitioning</a></li>
   <li><a href="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005" id="toc-on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005" class="nav-link" data-scroll-target="#on-the-seperation-of-net-ecosystem-exchange-into-assimilation-and-ecosystem-respiration-review-and-improved-algorithm-reichstein-2005">On the seperation of net ecosystem exchange into assimilation and ecosystem respiration: review and improved algorithm (Reichstein, 2005)</a></li>
   <li><a href="#daytime-flux-partitioning-method---lasslop-et-al.-2010" id="toc-daytime-flux-partitioning-method---lasslop-et-al.-2010" class="nav-link" data-scroll-target="#daytime-flux-partitioning-method---lasslop-et-al.-2010">Daytime flux partitioning method -&gt; Lasslop et al.&nbsp;(2010)</a></li>
+  <li><a href="#partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020" id="toc-partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020" class="nav-link" data-scroll-target="#partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020">Partitioning net carbon dioxide fluxes into photosynthesis and respiration using neural networks -&gt; (Tramontana et al., 2020)</a></li>
+  <li><a href="#widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019" id="toc-widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019" class="nav-link" data-scroll-target="#widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019"><strong>Widespread inhibition of daytime ecosystem respiration (Keenan et al., 2019)</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -201,6 +203,11 @@ window.Quarto = {
 <p>The CO<sub>2</sub> analyzer is measuring CO<sub>2</sub> flux or what we called net ecosystem exchange (F<sub>CO2</sub> or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as <span class="math inline">\(NEE = Reco - GPP\)</span>. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p>There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p><a href="https://www.bgc-jena.mpg.de/5624848/Flux-partitioning" class="uri">https://www.bgc-jena.mpg.de/5624848/Flux-partitioning</a></p>
+<p>Other Possible Ways on measuring Reco:</p>
+<p>1) Estimates from biogeochemical or soil–vegetation–atmosphere transfer (SVAT) models (<a href="https://link.springer.com/article/10.1023/A:1002497616547" class="uri">https://link.springer.com/article/10.1023/A:1002497616547</a>)</p>
+<p>2) From chamber measurements extrapolated to the stand scale (<a href="https://doi.org/10.1046/j.1365-2486.1999.00214.x" class="uri">https://doi.org/10.1046/j.1365-2486.1999.00214.x</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/11262922/" class="uri">https://pubmed.ncbi.nlm.nih.gov/11262922/</a>)</p>
+<p>Nighttime Partitioning Drawbacks:</p>
+<p>1) frequent nighttime suppression of turbulence and dominance of advective fluxes not measured by conventional EC systems (Lasslop et al., 2010)</p>
 </section>
 <section id="partitioning-with-reddyproc" class="level2">
 <h2 class="anchored" data-anchor-id="partitioning-with-reddyproc">Partitioning with REddyProc</h2>
@@ -244,7 +251,7 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <p>From 2024/11/24 to , check the paper <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2486.2005.001002.x">here</a>: doi: 10.1111/j.1365-2486.2005.001002.x</p>
 <p>Main Research Question: analyse the effect of short-term vs.&nbsp;long-term temperature sensitivity on the estimation of daytime Reco and GPP.</p>
 <ul>
-<li>(The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.g., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)</li>
+<li>(The observed seasonal temperature sensitivity of ecosystem respiration includes influences from other factors (e.o., soil moisture, growth) that vary with temperature, making it different from the actual short-term temperature sensitivity.)</li>
 </ul>
 <p>Improved Algorithm:</p>
 <ul>
@@ -254,6 +261,9 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <li><p>Linearly interpolate Rref based on estimates from 4-day periods and integrate E0, short into respiration calculations.</p></li>
 <li><p>Use the improved algorithm to partition NEE into GEP and Reco while addressing biases from long-term temperature sensitivity.</p></li>
 </ul>
+<p><span class="math display">\[R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\]</span></p>
+<p>T<sub>0</sub> is kept constant at -46.02 celsius degrees; T<sub>ref</sub> is set to 10 celsius degrees in (Reichstein, 2005) and 15 celsius degrees in (Lasslop et al., 2010). E<sub>0</sub>, temperature sensitivity is a constant value used for the whole year in (Lasslop et al., 2010) and in a short periods in (Reichstein, 2005), R<sub>eco,ref</sub> was estimated every 5 days using a 15 days window.</p>
+<p>Using daytime temperature, respiration is extrapolated to the daytime and the difference between modeled R<sub>eco</sub> and measured NEE yields estimated GPP. We refer to this estimate as ‘NB’ (nighttime data-based).</p>
 <p>The paper for REddyProc package: <a href="https://bg.copernicus.org/articles/15/5015/2018/" class="uri">https://bg.copernicus.org/articles/15/5015/2018/</a></p>
 </section>
 <section id="daytime-flux-partitioning-method---lasslop-et-al.-2010" class="level2">
@@ -276,6 +286,21 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <p><span class="math inline">\(R_g \, ({W m}^{-2})\)</span> is the global radiation</p>
 <p>Gilmanov et al.&nbsp;(2003) consider the temperature sensitivity of the Reco, thus combined with Llyod &amp; Taylor (1994), then:</p>
 <p><span class="math display">\[\begin{equation}\mathrm{NEE} = \frac{\alpha \beta R_g}{\alpha R_g + \beta} + R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\end{equation}\]</span></p>
+<p>There are two ways in estimating parameters:</p>
+<p>a) E<sub>0</sub> was estimated using nighttime data, R<sub>eco,ref</sub>, alpha, beta were derived from daytime data ; b) All parameters were estimated using daytime data.</p>
+<p>With the consideration of VPD limitation, β could be further interpreted as with an exponential decreasing function (Korner, 1995)</p>
+<p><span class="math display">\[
+\beta =\begin{cases} \beta_0 \exp(-k(\text{VPD} - \text{VPD}_0)), &amp; \text{VPD} &gt; \text{VPD}_0, \\\beta_0, &amp; \text{VPD} \leq \text{VPD}_0.\end{cases}
+\]</span></p>
+</section>
+<section id="partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020" class="level2">
+<h2 class="anchored" data-anchor-id="partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020">Partitioning net carbon dioxide fluxes into photosynthesis and respiration using neural networks -&gt; (Tramontana et al., 2020)</h2>
+</section>
+<section id="widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019" class="level2">
+<h2 class="anchored" data-anchor-id="widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019"><strong>Widespread inhibition of daytime ecosystem respiration (Keenan et al., 2019)</strong></h2>
+<p><a href="https://www.nature.com/articles/s41559-019-0809-2#ref-CR12" class="uri">https://www.nature.com/articles/s41559-019-0809-2#ref-CR12</a> With the consideration of the inhibition of leaf respiration in the light</p>
+<p>The daytime and nighttime approaches are built on the assumption that the reference respiration rate (<em>R</em><sub>ref</sub>) does not change between night and day. If there’s inhibition of leaf respiration in the light, then nighttime method will overestimate daytime respiration and the daytime method will underestimate the nighttime respiration</p>
+<p>Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.</p>
 
 
 </section>
