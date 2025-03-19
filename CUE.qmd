@@ -1,0 +1,72 @@
+---
+title: "T&C Equations"
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## **Deciduous Forests Use Carbon More Efficiently Than Evergreen Forests (Luo et al., 2024)**
+
+Carbon Use Efficiency (CUE) = NPP/GPP = (GPP-Ra)/GPP, a higher CUE
+indicates faster accumulation of biomass and production of other
+secondary products.
+
+-   Previous studies suggested the global CUE converges to 0.47 (± 0.04)
+    with little variation across temperate and boreal forest stands
+
+*R* into growth (*R*~G~) and maintenance (*R*~M~) components, *R*~G~ is
+considered to be a fixed fraction of new tissue growth, independent of
+temperature, the fraction varying only with the cost of building the
+compounds constituting the new tissue. *R*~M~ is the cost of maintaining
+the existing biomass (Wlive). Temperature, substrate availability and
+the demand for respiratory products are considered to control *R*~M.~
+
+Method: Used GPP and Reco values based on daytime partitioning methods
+
+CUE = (GPP-Ra)/GPP = 1 - Ra/GPP
+
+Between any two timesteps in the case of constant CUE, 𝚫Ra = (1-CUE) \*
+𝚫GPP（Equation 1)
+
+With the assumption that plant respiration is proportional to the mass
+of plant dry matter, \
+Ra = RG+RM = gRG + mRWlive （Equation 2）
+
+Sub Equation 1 to Equation 2: 𝚫Ra = gR𝚫G + mR𝚫Wlive
+
+𝚫G = 𝚫NPP = 𝚫GPP\* CUE
+
+𝚫Wlive = 𝚫cNPP = 𝚫cGPP \* CUE \* (1-τ), **τ** (tau) represents the
+fraction of live biomass turned into **non-respiratory biomass per unit
+time** (e.g., structural growth, leaf loss, turnover to litter, etc.).
+
+ΔRa = gR×CUE×ΔGPP + mR×CUE×ΔcGPP×(1-τ) (Equation 3)
+
+Step 1 - mR has strong temperature dependence and changes substantially
+within a year, include temperature sensitivity into equation
+
+Step 2 - grouped flux observations using windows of 5 consecutive days
+in the growing season -\> assumes there are limited changes in the
+biomass of leaf and ne roots within the short time window
+
+Step 3 - group flux observations by daily mean T (difference less
+than 1) and remove days with rainfall greater than 2 mm/day to avoid
+sudden pulses of respiration after rewetting the soil
+
+-\> Limited changes in soil organic matter and no changes in Rh under
+similar T -\> ΔRa = ΔReco
+
+ΔReco = gR×CUE×ΔGPP + e\^(-Ea/KB)(1/T-1/T0) ×mR0×CUE×ΔcGPP× (1-τ)
+(Equation 4)
+
+## **Forest Production Efficiency Increases with Growth Temperature (Collalti et al., 2020)**
+
+Carbon Use Efficiency (CUE) = NPP/GPP
+
+Biomass Production Efficiency (BPE) = BP/GPP
+
+-   Biomass production (BP), how organic carbon is partitioned into
+    plant organs versus other less stable forms which include soluble
+    organic compounds exuded to the rhizosphere or stored as reserves,
+    and biogenic volatile organic compounds (BVOCs) emitted to the
+    atmosphere

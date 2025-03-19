@@ -165,6 +165,7 @@ window.Quarto = {
   <li><a href="#c-related" id="toc-c-related" class="nav-link active" data-scroll-target="#c-related">C Related</a></li>
   <li><a href="#plants-related" id="toc-plants-related" class="nav-link" data-scroll-target="#plants-related">Plants Related</a></li>
   <li><a href="#remote-sensing" id="toc-remote-sensing" class="nav-link" data-scroll-target="#remote-sensing">Remote Sensing</a></li>
+  <li><a href="#radiation-related" id="toc-radiation-related" class="nav-link" data-scroll-target="#radiation-related">Radiation Related</a></li>
   </ul>
 </nav>
     </div>
@@ -210,6 +211,12 @@ window.Quarto = {
 <li><a href="https://hakimabdi.com/blog/birth-of-the-normalized-difference-vegetation-index-and-the-paradigm-shift-in-satellite-remote-sensing-of-the-environment">Normalized Difference Vegetation Index (NDVI)</a> first introduced by Rousie and his colleagues in “<a href="https://ntrs.nasa.gov/api/citations/19740022614/downloads/19740022614.pdf"><em>Monitoring Vegetation Systems in the Great Plains with ERTS</em></a>”, defined as <span class="math display">\[NDVI = (NIR-RED)/(NIR+RED) = [\rho(0.86\mu m)-\rho(0.66\mu m)] / [\rho(0.86\mu m)+\rho(0.66\mu m)]\]</span>, where <span class="math inline">\(\rho\)</span> represents the radiance in reflectance units. Vegetation reflects a high amount of NIR (40-60%), absorbs RED (thus reflect less, below 10%) due to chlorophyll. Thus, healthy vegetation has higher NDVI due to high NIR-to-red ratio. Normalization is essential in NDVI to minimize the effects of lighting conditions, sun angle, and atmospheric interference, making vegetation measurements more consistent and comparable across different times and locations. Consider what will happen during a cloudy day vs.&nbsp;sunny day?</li>
 <li>Normalized Difference Water Index (NDWI) introduced by <a href="https://www.sciencedirect.com/science/article/pii/S0034425796000673">Gao</a> in 1996, defined as <span class="math display">\[NDWI = (NIR-SWIR)/(NIR+SWIR) = [\rho(0.86\mu m)-\rho(1.24\mu m)] / [\rho(0.86\mu m)+\rho(1.24\mu m)]\]</span>. Absorption by vegetation liquid water near <span class="math inline">\(0.86\mu m\)</span> is negligible and weak liquid absorption at <span class="math inline">\(1.24\mu m\)</span>.</li>
 </ul>
+</section>
+<section id="radiation-related" class="level2">
+<h2 class="anchored" data-anchor-id="radiation-related">Radiation Related</h2>
+<p><strong>PAR (photosynthetic active radiation)</strong>, 400-700 nm, and it is described as the <strong>type</strong> of light required for photosynthesis.</p>
+<p><strong>PPF (Photosynthetic photon flux, µMol/S)</strong>, how much PAR is being produced by any one lighting system over the period of a second.</p>
+<p><strong>PPFD (Photosynthetic photon flux density, µMol/m2/S)</strong>, how many PAR photons are landing on a specific area.</p>
 
 
 </section>
