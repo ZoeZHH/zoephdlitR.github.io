@@ -1,5 +1,5 @@
 ---
-title: "T&C Equations"
+title: "Carbon Use Efficiency"
 editor: 
   markdown: 
     wrap: 72
@@ -37,8 +37,8 @@ Sub Equation 1 to Equation 2: 𝚫Ra = gR𝚫G + mR𝚫Wlive
 𝚫G = 𝚫NPP = 𝚫GPP\* CUE
 
 𝚫Wlive = 𝚫cNPP = 𝚫cGPP \* CUE \* (1-τ), **τ** (tau) represents the
-fraction of live biomass turned into **non-respiratory biomass per unit
-time** (e.g., structural growth, leaf loss, turnover to litter, etc.).
+fraction of live biomass turned into non-respiratory biomass per unit
+time (e.g., structural growth, leaf loss, turnover to litter, etc.).
 
 ΔRa = gR×CUE×ΔGPP + mR×CUE×ΔcGPP×(1-τ) (Equation 3)
 

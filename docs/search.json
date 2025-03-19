@@ -28,11 +28,74 @@
     "text": "Global Patterns of land-atmosphere fluxes of carbon dioxide, latent heat, and xxx (June et al., 2011)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "About Me",
+    "objectID": "CUE.html",
+    "href": "CUE.html",
+    "title": "T&C Equations",
     "section": "",
-    "text": "Thanks for checking out my web site!"
+    "text": "Carbon Use Efficiency (CUE) = NPP/GPP = (GPP-Ra)/GPP, a higher CUE indicates faster accumulation of biomass and production of other secondary products.\n\nPrevious studies suggested the global CUE converges to 0.47 (± 0.04) with little variation across temperate and boreal forest stands\n\nR into growth (RG) and maintenance (RM) components, RG is considered to be a fixed fraction of new tissue growth, independent of temperature, the fraction varying only with the cost of building the compounds constituting the new tissue. RM is the cost of maintaining the existing biomass (Wlive). Temperature, substrate availability and the demand for respiratory products are considered to control RM.\nMethod: Used GPP and Reco values based on daytime partitioning methods\nCUE = (GPP-Ra)/GPP = 1 - Ra/GPP\nBetween any two timesteps in the case of constant CUE, 𝚫Ra = (1-CUE) * 𝚫GPP（Equation 1)\nWith the assumption that plant respiration is proportional to the mass of plant dry matter,\nRa = RG+RM = gRG + mRWlive （Equation 2）\nSub Equation 1 to Equation 2: 𝚫Ra = gR𝚫G + mR𝚫Wlive\n𝚫G = 𝚫NPP = 𝚫GPP* CUE\n𝚫Wlive = 𝚫cNPP = 𝚫cGPP * CUE * (1-τ), τ (tau) represents the fraction of live biomass turned into non-respiratory biomass per unit time (e.g., structural growth, leaf loss, turnover to litter, etc.).\nΔRa = gR×CUE×ΔGPP + mR×CUE×ΔcGPP×(1-τ) (Equation 3)\nStep 1 - mR has strong temperature dependence and changes substantially within a year, include temperature sensitivity into equation\nStep 2 - grouped flux observations using windows of 5 consecutive days in the growing season -&gt; assumes there are limited changes in the biomass of leaf and ne roots within the short time window\nStep 3 - group flux observations by daily mean T (difference less than 1) and remove days with rainfall greater than 2 mm/day to avoid sudden pulses of respiration after rewetting the soil\n-&gt; Limited changes in soil organic matter and no changes in Rh under similar T -&gt; ΔRa = ΔReco\nΔReco = gR×CUE×ΔGPP + e^(-Ea/KB)(1/T-1/T0) ×mR0×CUE×ΔcGPP× (1-τ) (Equation 4)"
+  },
+  {
+    "objectID": "CUE.html#deciduous-forests-use-carbon-more-efficiently-than-evergreen-forests-luo-et-al.-2024",
+    "href": "CUE.html#deciduous-forests-use-carbon-more-efficiently-than-evergreen-forests-luo-et-al.-2024",
+    "title": "T&C Equations",
+    "section": "",
+    "text": "Carbon Use Efficiency (CUE) = NPP/GPP = (GPP-Ra)/GPP, a higher CUE indicates faster accumulation of biomass and production of other secondary products.\n\nPrevious studies suggested the global CUE converges to 0.47 (± 0.04) with little variation across temperate and boreal forest stands\n\nR into growth (RG) and maintenance (RM) components, RG is considered to be a fixed fraction of new tissue growth, independent of temperature, the fraction varying only with the cost of building the compounds constituting the new tissue. RM is the cost of maintaining the existing biomass (Wlive). Temperature, substrate availability and the demand for respiratory products are considered to control RM.\nMethod: Used GPP and Reco values based on daytime partitioning methods\nCUE = (GPP-Ra)/GPP = 1 - Ra/GPP\nBetween any two timesteps in the case of constant CUE, 𝚫Ra = (1-CUE) * 𝚫GPP（Equation 1)\nWith the assumption that plant respiration is proportional to the mass of plant dry matter,\nRa = RG+RM = gRG + mRWlive （Equation 2）\nSub Equation 1 to Equation 2: 𝚫Ra = gR𝚫G + mR𝚫Wlive\n𝚫G = 𝚫NPP = 𝚫GPP* CUE\n𝚫Wlive = 𝚫cNPP = 𝚫cGPP * CUE * (1-τ), τ (tau) represents the fraction of live biomass turned into non-respiratory biomass per unit time (e.g., structural growth, leaf loss, turnover to litter, etc.).\nΔRa = gR×CUE×ΔGPP + mR×CUE×ΔcGPP×(1-τ) (Equation 3)\nStep 1 - mR has strong temperature dependence and changes substantially within a year, include temperature sensitivity into equation\nStep 2 - grouped flux observations using windows of 5 consecutive days in the growing season -&gt; assumes there are limited changes in the biomass of leaf and ne roots within the short time window\nStep 3 - group flux observations by daily mean T (difference less than 1) and remove days with rainfall greater than 2 mm/day to avoid sudden pulses of respiration after rewetting the soil\n-&gt; Limited changes in soil organic matter and no changes in Rh under similar T -&gt; ΔRa = ΔReco\nΔReco = gR×CUE×ΔGPP + e^(-Ea/KB)(1/T-1/T0) ×mR0×CUE×ΔcGPP× (1-τ) (Equation 4)"
+  },
+  {
+    "objectID": "CUE.html#forest-production-efficiency-increases-with-growth-temperature-collalti-et-al.-2020",
+    "href": "CUE.html#forest-production-efficiency-increases-with-growth-temperature-collalti-et-al.-2020",
+    "title": "T&C Equations",
+    "section": "Forest Production Efficiency Increases with Growth Temperature (Collalti et al., 2020)",
+    "text": "Forest Production Efficiency Increases with Growth Temperature (Collalti et al., 2020)\nCarbon Use Efficiency (CUE) = NPP/GPP\nBiomass Production Efficiency (BPE) = BP/GPP\n\nBiomass production (BP), how organic carbon is partitioned into plant organs versus other less stable forms which include soluble organic compounds exuded to the rhizosphere or stored as reserves, and biogenic volatile organic compounds (BVOCs) emitted to the atmosphere"
+  },
+  {
+    "objectID": "C Models.html",
+    "href": "C Models.html",
+    "title": "C Models",
+    "section": "",
+    "text": "2024/11/09 , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
+  },
+  {
+    "objectID": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
+    "href": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
+    "title": "C Models",
+    "section": "",
+    "text": "2024/11/09 , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
+  },
+  {
+    "objectID": "TalkC.html",
+    "href": "TalkC.html",
+    "title": "Let’s Talk C Here",
+    "section": "",
+    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits: lalala\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
+  },
+  {
+    "objectID": "TalkC.html#c-models",
+    "href": "TalkC.html#c-models",
+    "title": "Let’s Talk C Here",
+    "section": "",
+    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits: lalala\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
+  },
+  {
+    "objectID": "TalkC.html#project-2",
+    "href": "TalkC.html#project-2",
+    "title": "Let’s Talk C Here",
+    "section": "Project 2",
+    "text": "Project 2"
+  },
+  {
+    "objectID": "TalkC.html#project-3",
+    "href": "TalkC.html#project-3",
+    "title": "Let’s Talk C Here",
+    "section": "Project 3",
+    "text": "Project 3"
+  },
+  {
+    "objectID": "Others.html",
+    "href": "Others.html",
+    "title": "Zoe Is Reading Papers",
+    "section": "",
+    "text": "2024/11/08 How to write a proposal: https://franciskadevries.wordpress.com/2022/01/16/my-recipe-for-a-proposal%ef%bf%bc/\n2024/11/11 Proposal Questions Record: Long-term monitoring of element cycles and surface energy budgets in tropical urban and natural ecosystems in Singapore 1) Interdisciplinary. How does this research help Singapore? People might not understand the importance of it. Answer: Singapore aims for carbon neutral by 2050. We don’t have knowledge in tropical forests. 2) The concept between accounting C and C fluxes Answer: Savings vs. Investing 3) Water part? How understanding of the watershed monitoring to help? 4) How sites data complement model prediction and validation? 5) The possibility of erecting a high flux tower (&gt;40m might be too high, flight restriction) - Is the proposed site the best site? - Who take control on constructions? NPARKs+VCA+EIA - Forest site is hard. Think about existing tower. 6) Rationale for grassland site? Answer: To understand what happened across Singapore, we need to understand different ecosystems. - Can never set a permanent site in grassland\n2024/11/23 Notes About Soil Respiration\nSoil Respiration components: root respiration, surface-litter respiration and the respiration of soil organic matter (including root detritus)\n\nLowest soil respiration occur in coldest (tundra & northern bogs) and driest (deserts) biomes, highest in tropical moist forests where both T and moisture availability are high year-round\n\nSoil respiration rates in northern peatlands were shown to be positively correlated with depth to water table by Moore and Knowles (1989) and Luken and Billings (1985)\n\nSoil respiration rates are positively correlated with mean annual air T and mean annual precipitation\n\nFor soil respiration studies Q10 values cited range from 1.3 to 3.3 (Reich & Schlesinger 1992). Based on a review of in situ measurements, the Q10 value for total soil respiration has a median value of 2.4.\nThe turnover time of soil carbon refers to the average time that carbon remains in the soil before being released back into the atmosphere as carbon dioxide through decomposition. = soil carbon pool / soil respiration rate from the decomposition of soil organic matter (if with assumption live root contribute 30%, then you get soil R * 0.70 for soil organic matter decomposition)\nDiscussion: Ecosystem respiration, collar heights"
   },
   {
     "objectID": "Terminology.html",
@@ -70,53 +133,11 @@
     "text": "Radiation Related\nPAR (photosynthetic active radiation), 400-700 nm, and it is described as the type of light required for photosynthesis.\nPPF (Photosynthetic photon flux, µMol/S), how much PAR is being produced by any one lighting system over the period of a second.\nPPFD (Photosynthetic photon flux density, µMol/m2/S), how many PAR photons are landing on a specific area."
   },
   {
-    "objectID": "Others.html",
-    "href": "Others.html",
-    "title": "Zoe Is Reading Papers",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
     "section": "",
-    "text": "2024/11/08 How to write a proposal: https://franciskadevries.wordpress.com/2022/01/16/my-recipe-for-a-proposal%ef%bf%bc/\n2024/11/11 Proposal Questions Record: Long-term monitoring of element cycles and surface energy budgets in tropical urban and natural ecosystems in Singapore 1) Interdisciplinary. How does this research help Singapore? People might not understand the importance of it. Answer: Singapore aims for carbon neutral by 2050. We don’t have knowledge in tropical forests. 2) The concept between accounting C and C fluxes Answer: Savings vs. Investing 3) Water part? How understanding of the watershed monitoring to help? 4) How sites data complement model prediction and validation? 5) The possibility of erecting a high flux tower (&gt;40m might be too high, flight restriction) - Is the proposed site the best site? - Who take control on constructions? NPARKs+VCA+EIA - Forest site is hard. Think about existing tower. 6) Rationale for grassland site? Answer: To understand what happened across Singapore, we need to understand different ecosystems. - Can never set a permanent site in grassland\n2024/11/23 Notes About Soil Respiration\nSoil Respiration components: root respiration, surface-litter respiration and the respiration of soil organic matter (including root detritus)\n\nLowest soil respiration occur in coldest (tundra & northern bogs) and driest (deserts) biomes, highest in tropical moist forests where both T and moisture availability are high year-round\n\nSoil respiration rates in northern peatlands were shown to be positively correlated with depth to water table by Moore and Knowles (1989) and Luken and Billings (1985)\n\nSoil respiration rates are positively correlated with mean annual air T and mean annual precipitation\n\nFor soil respiration studies Q10 values cited range from 1.3 to 3.3 (Reich & Schlesinger 1992). Based on a review of in situ measurements, the Q10 value for total soil respiration has a median value of 2.4.\nThe turnover time of soil carbon refers to the average time that carbon remains in the soil before being released back into the atmosphere as carbon dioxide through decomposition. = soil carbon pool / soil respiration rate from the decomposition of soil organic matter (if with assumption live root contribute 30%, then you get soil R * 0.70 for soil organic matter decomposition)\nDiscussion: Ecosystem respiration, collar heights"
-  },
-  {
-    "objectID": "TalkC.html",
-    "href": "TalkC.html",
-    "title": "Let’s Talk C Here",
-    "section": "",
-    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits: lalala\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
-  },
-  {
-    "objectID": "TalkC.html#c-models",
-    "href": "TalkC.html#c-models",
-    "title": "Let’s Talk C Here",
-    "section": "",
-    "text": "Researchers developed three ways for predicting global GPP!\n\nDynamic global vegetation models (DGVMs)\nMethods: Compute GPP based on complex process-based algorithms\nBenefits: lalala\nLimitations:\n\nUnderestimate the effect of atmospheric dryness on GPP and overestimate the current increase in GPP\n\nFlux-data driven models\nMethods: Eddy-covariance flux measurements\nBenefits:\nLimitations:\nRemote-sensing based models (RSMs)\nMethods: Use algorithms based on satellite retrievals of land-surface properties\n\\[GPP = LUE\\times PAR\\times fAPAR \\]\nLUE is light use efficiency, PAR is incident photosynthetically active radiation and fAPAR is the fraction of photosynthetically available radiation absorbed by vegetation\nBenefits: Compared to DGVMs, fewer assumptions about vegetation dynamic and productivity\nComapred to flux-data driven models, more extensive data\nLimitations:\n\nValidity of RSM-based are challenging due to lack of independent, global-scale empirical data on GPP"
-  },
-  {
-    "objectID": "TalkC.html#project-2",
-    "href": "TalkC.html#project-2",
-    "title": "Let’s Talk C Here",
-    "section": "Project 2",
-    "text": "Project 2"
-  },
-  {
-    "objectID": "TalkC.html#project-3",
-    "href": "TalkC.html#project-3",
-    "title": "Let’s Talk C Here",
-    "section": "Project 3",
-    "text": "Project 3"
-  },
-  {
-    "objectID": "C Models.html",
-    "href": "C Models.html",
-    "title": "C Models",
-    "section": "",
-    "text": "2024/11/09 , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
-  },
-  {
-    "objectID": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
-    "href": "C Models.html#why-models-underestimate-west-african-tropical-forest-primary-productivity",
-    "title": "C Models",
-    "section": "",
-    "text": "2024/11/09 , check the paper here: doi: https://doi.org/10.1038/s41467-024-53949-0\nMain Research Question:Previous studies found large GPP data-model discrepencies for tropical forests between flux towers and models and here to investigate into the causes of discrepancy. In this study, we found that the data-model discrepancy was due to fAPAR and photosynthetic capacity.\nObjective 1 - Compare the biometric GPP to multiple models and satellite-based products, to quantify the data-model discrepancy Implement three study sites with three major forest types. At each site, biometric measured GPP exceeds methods GPP and global GPP products. DGVM &gt; FLUXCOM &gt; MODIS\nObjective 2 - Investigate whether the field-observed high productivity is consistent with the leaf photosynthetic traits and other field measurements that were commonly simulated by models discrepency but within the uncertainty range, objective 3 is more important to note it\nObjective 3 - Account for the data-model discrepancy of MODIS and Pmodel and explore key responsible parameters in DGVMs, with following 4 hypotheses based on Large data-model discrepancy for GPP could stem from inaccuracies in one or more of these key input variables\nHypothesis 1 - incorrect LUE, or photosynthetic capacity PPFD could not explain the underestimation of GPP at the study sites\nHypothesis 2 - incorrect fAPAR [Accepted] GPP is substantially underestimated when in situ fAPAR is replaced with MODIS fAPAR (A further investigation into MODIS fAPAR shows that during the rainy season, MODIS fAPAR decreases along with increasing cloud cover (up to 90% of pixels), whereas field fAPAR remains fairly constant during the year)\nHypothesis 3 - inappropriate assignments of plant functional types [Rejected] Given ‘forest-only’ GPP of TRENDY and MODIS are much lower than biometric GPP, conclude that the GPP data-model discrepancy between TRENDY and biometric GPP cannot be explained by scaling or PFT issues\nHypothesis 4 - climate variable [Rejected] The data-model differences found for T, RH, PPFD were too small to explain the GPP data-model discrepency, thus rejecting hypothesis 4"
+    "text": "Thanks for checking out my web site!"
   },
   {
     "objectID": "EC Partitioning.html",
