@@ -5,6 +5,41 @@ editor:
     wrap: 72
 ---
 
+Carbon-Cycle Concepts: https://doi.org/10.1007/s10021-005-0105-7
+
+Previous NPP measurements:
+[**https://doi.org/10.1890/1051-0761(2001)011\[0356:MNPPIF\]2.0.CO;2**](https://doi.org/10.1890/1051-0761(2001)011[0356:MNPPIF]2.0.CO;2)
+
+Zanotelli D, Montagnani L, Manca G, Tagliavini M (2013) Net primary
+productivity, allocation pattern and carbon use efficiency in an apple
+orchard assessed by integrating eddy covariance, biometric and
+continuous chamber measurements. Biogeosciences 10:3089–3108.
+
+GPP is the balance between carbon fixed through photosynthesis and
+carbon lost through photorespiration, expressed per unit ground area and
+time
+
+Rubisco also favors oxygenase (so that part of the substrate is also
+oxidized, rather than carboxylated); this is a loss of substrate and
+waste of energy, i.e., ATP and NADPH break up carbon substrate and
+produce CO2. This is called photorespiration and can reduce of 30-50%
+net CO2 uptake (it depends on the CO2:O2 concentration).
+
+NPP is GPP minus autotrophic respiration
+
+Biomass production is the part of NPP that is used for biomass growth
+(taken to include litter and fruit production). Another part of NPP can
+be allocated to organic compounds that are not used for growth,
+including non-structural carbohydrates (NSCs; including starch, sugars
+and other polysaccharides), labile root exudates (primarily organic
+acids) that support biological activity in the rhizosphere and secondary
+metabolites (including biogenic volatile organic compounds) that are
+involved in signalling, defence against pathogens and herbivores or
+protection of tissues against thermal oxidative stress.
+
+Gifford (1995) proposed the term ‘carbon use efficiency’ (CUE = 1 −
+Ra/GPP), which is equivalent to the NPP to GPP ratio as defined by W98.
+
 ## **Deciduous Forests Use Carbon More Efficiently Than Evergreen Forests (Luo et al., 2024)**
 
 Carbon Use Efficiency (CUE) = NPP/GPP = (GPP-Ra)/GPP, a higher CUE
@@ -29,7 +64,7 @@ Between any two timesteps in the case of constant CUE, 𝚫Ra = (1-CUE) \*
 𝚫GPP（Equation 1)
 
 With the assumption that plant respiration is proportional to the mass
-of plant dry matter, \
+of plant dry matter,\
 Ra = RG+RM = gRG + mRWlive （Equation 2）
 
 Sub Equation 1 to Equation 2: 𝚫Ra = gR𝚫G + mR𝚫Wlive
@@ -70,3 +105,50 @@ Biomass Production Efficiency (BPE) = BP/GPP
     organic compounds exuded to the rhizosphere or stored as reserves,
     and biogenic volatile organic compounds (BVOCs) emitted to the
     atmosphere
+
+## **GRS 2500 WORDS QUICK LEARN**
+
+Kok effect?
+
+In darkness, plant mitochondria respire (release CO₂). In low light,
+mitochondria reduce respiration (called *light-inhibited respiration*).
+So it *looks* like photosynthesis is less efficient in low light — but
+actually, part of the CO₂ that would be released from respiration is
+just being suppressed.
+
+## **2025/03/26 Is NPP proportional to GPP? Waring's hypothesis 20 years on (Collalti & Prentice, 2019)**
+
+**This paper reviews progress in understanding the NPP:GPP ratio in
+forests during the 20 years since the Waring et al. paper, which found a
+NPP:GPP ratio of 0.47 ± 0.04 (SD) is universal across biomes, tree
+species and stand ages.**
+
+GPP can be estimated either from remote sensing with light-use
+efficiency model at timescale around a week or sub-daily basis with EC
+partitioning
+
+Gifford (1995) proposed term 'carbon use efficiency', CUE = NPP/GPP =
+1-Ra/GPP\
+Vicca et al. (2012) introduced 'biomass production efficiency', BPE =
+BP/GPP
+
+**CUE varied across forest types and stand age**
+
+**Cannell (2000)** showed a stable ratio of Ra and GPP, but noted that
+assuming a single value in models might overlook both differences among
+sites and variations from year to year.\
+**Amthor (2000)** analysed 30 years of studies on NPP:GPP, ranged from
+0.20 to 0.65, the lowest values for moist tropical forests, and the
+highest value for a temperate Fraxinus plantation.\
+**Ryan et al. (2004)** found instead that an age-related decline in GPP
+was accompanied by a decline in Ra.\
+**De Lucia et al. (2007)** the NPP:GPP ratio, largely based on biometric
+estimates of BP standing in for NPP, varied substantially among biomes
+and age classes.
+
+**Variability across measurement methods**
+
+**Curtis et al. (2005)** compared independent methods to estimate BP and
+eddy covariance for GPP, an average NPP:GPP ratio of 0.42 ± 0.016 using
+biometric methods for both NPP and GPP and 0.54 ± 0.04 using biometric
+methods for NPP against eddy covariance GPP.

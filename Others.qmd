@@ -52,3 +52,14 @@ with assumption live root contribute 30%, then you get soil R \* 0.70
 for soil organic matter decomposition)
 
 Discussion: Ecosystem respiration, collar heights
+
+03/24 Questions?
+Why not using nighttime for night data and daytime for day data to solve the light inhibition problem?
+
+
+Should we consider this in our research?
+
+Why do you think daytime partitioning method is better than nighttime? Uncertainty is larger?
+
+A scan on CUE related papers and found researchers has been mostly thinking CUE as constant over the last 20 years, too difficult to get the measurements of Ra and NPP. There's no investigation on CUE for variations across ecosystems and across seasons.
+
