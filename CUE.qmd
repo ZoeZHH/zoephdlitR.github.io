@@ -8,7 +8,7 @@ editor:
 Carbon-Cycle Concepts: https://doi.org/10.1007/s10021-005-0105-7
 
 Previous NPP measurements:
-[**https://doi.org/10.1890/1051-0761(2001)011\[0356:MNPPIF\]2.0.CO;2**](https://doi.org/10.1890/1051-0761(2001)011[0356:MNPPIF]2.0.CO;2)
+[**https://doi.org/10.1890/1051-0761(2001)011\[0356:MNPPIF\]2.0.CO;2**](https://doi.org/10.1890/1051-0761(2001)011%5B0356:MNPPIF%5D2.0.CO;2)
 
 Zanotelli D, Montagnani L, Manca G, Tagliavini M (2013) Net primary
 productivity, allocation pattern and carbon use efficiency in an apple
@@ -152,3 +152,51 @@ and age classes.
 eddy covariance for GPP, an average NPP:GPP ratio of 0.42 ± 0.016 using
 biometric methods for both NPP and GPP and 0.54 ± 0.04 using biometric
 methods for NPP against eddy covariance GPP.
+
+## **2025/03/27** Net primary productivity, allocation pattern and carbon use efficiency in an apple orchard assessed by integrating eddy covariance, biometric and continuous chamber measurements (Zanotelli et al., 2013)
+
+**This paper combined three largely deployed methods, eddy covariance,
+soil respiration and biometric measurements, to assess monthly values of
+CUE, NPP and allocation patterns in different plant organs in an apple
+orchard during 2010, with an annual average of 0.71 ± 0.12.**
+
+NPP = GPP-Ra = NEP+Rh
+
+GPP = NPP + Ra = NEP+Reco, Reco =Ra + Rh
+
+Methods:
+
+1\) Eddy Covariance Technique for GPP
+
+2\) Biometric measurements for NPP: NPP (How much has been growth?) =
+standing biomass from now - standing biomass from last time + litter
+collected in nets
+
+3\) Automatic multichambered fir Rs and Rh (trenched)
+
+Ra can be calculated by 1) Ra = GPP (EC)-NPP (Biometric); 2) Ra = Reco
+(EC)- Rh (chamber); 3) Ra_BG = Rs-Rh, Ra = k(Ra_BG) upscaling the Ra_BG
+to get Ra
+
+NPP can be calculated by 1) NPP_biom or 2) NPP_flux (NEP from EC+Rh from
+chamber)
+
+GPP can be calculated by 1) GPP_EC from EC or GPP_BS = NPP_biom +
+upscale Ra
+
+**CUE can be calculated by 1) NPP_biom/GPP_EC (yearly and seasonal), 2)
+NPP_flux/GPP_BS (yearly), 3) NPP_flux/GPP_EC & 4) NPP_biom/GPP_BS**
+
+Results: NPPbiom/GPPEC 0.76 ± 0.13 NPPflux/GPPEC 0.79 ±0.14
+NPPbiom/GPPBS 0.64 ± 0.10 NPPflux/GPPBS 0.66 ± 0.11
+
+Takeaway: CUE of agro-ecosystems can be higher than that of forests
+growing in a similar climate, comes from higher GPP.
+
+Points to explore: CUE is an intuitive and easily comparable index to
+assess the capacity of an ecosystem to transfer C from the atmosphere to
+terrestrial biomass
+
+? The Eddysoft software uses the algorithm proposed by Eugster and Senn
+(1995) to correct for the underestimation of covariance signal due to
+damping of high-frequency fluctuation of CO2 concentration.
