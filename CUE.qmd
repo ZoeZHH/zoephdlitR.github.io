@@ -200,3 +200,17 @@ terrestrial biomass
 ? The Eddysoft software uses the algorithm proposed by Eugster and Senn
 (1995) to correct for the underestimation of covariance signal due to
 damping of high-frequency fluctuation of CO2 concentration.
+
+## **2025/03/28** The proposed of concept CUE, Whole plant respiration and photosynthesis under increased CO2 concentration and Temperature (GIFFORD, 1995)
+
+Gifford (1995) proposed the term ‘carbon use efficiency’ (CUE = 1 −
+Ra/GPP), which is equivalent to the NPP to GPP ratio as defined by
+Waring et al. (1998).
+
+Discussion about CUE:
+
+CUE = (P-R)/P = 1- R/P, in my finding, I found R/P becomes smaller as
+CO2 increase. R increase smaller than P increase
+
+In this paper, Gifford (1995) increased CO2 from ambient to 710 PPM,
+found CUE increased from 0.65 to 0.66
