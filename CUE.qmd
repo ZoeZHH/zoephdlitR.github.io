@@ -7,6 +7,65 @@ editor:
 
 Carbon-Cycle Concepts: https://doi.org/10.1007/s10021-005-0105-7
 
+Scientists: 1) some authors have defined NEP primarily as net C
+accumulation rate
+
+2\) dissolved, volatile, and depositional organic and inorganic C fluxes
+other than GPP and ER are often substantial -\> the imbalance between
+GPP and ER does not equal next C accumulation rate in ecosystems -\> the
+imbalance between GPP and ER
+
+At the end, we think NEP = GPP - ER
+
+NECB as the net rate of C accumulation in ecosystems.
+
+$\text{NECB} = -\text{NEE} + F_{\text{CO}} + F_{\text{CH}4} + F{\text{VOC}} + F_{\text{DIC}} + F_{\text{DOC}} + F_{\text{PC}}$
+
+FCO is net carbon monoxide (CO) absorption (or efflux \[negative
+sign\]); FCH4 is net methane (CH4) consumption (or efflux \[negative
+sign\]); FVOC is net volatile organic C (VOC) absorption (or efflux
+\[negative sign\]); FDIC is net dissolved inorganic C (DIC) input to the
+ecosystem (or net DIC leaching loss \[negative sign\]); FDOC is net
+dissolved organic C (DOC) input (or net DOC leaching loss \[negative
+sign\]); and FPC is the net lateral transfer of particulate
+(nondissolved, nongaseous) C into the ecosystem (or out of \[negative
+sign\]) by processes such as animal movement, soot emission during
+fires, water and wind deposition and erosion, and anthropogenic
+transport or harvest.
+
+**NEE is defined by atmospheric scientists as a C input to the
+atmosphere, wheres NEP and NECB are defined by ecologists as C inputs to
+ecosystems**
+
+GPP 1) = photosynthesis (we only have this when use Eddy Covariance) and
+2) = photosynthesis + chemoautotrophy (a process where certain bacteria
+and archaea fix carbon dioxide into organic matter using energy from the
+oxidation of inorganic compounds instead of sunlight.)
+
+Autotrophic respiration (AR) is the sum of respiration (CO2 production)
+by all living parts of primary producers per unit ground or water area
+and time.
+
+Heterotrophic respiration (HR) is the respiration rate of heterotrophic
+organisms (animals and microbes) summed per unit ground or water area
+and time.
+
+Ecosystem respiration (ER) is the respiration of all organisms summed
+per unit ground or water area and time.
+
+Net ecosystem production (NEP) is GPP minus ER.
+
+Net ecosystem exchange (NEE) is the net CO2 exchange with the
+atmosphere—that is, the vertical and lateral CO2 flux from the ecosystem
+to the atmosphere (Baldocchi 2003).
+
+Net primary production (NPP) is GPP - AR. It includes not only the
+growth of primary producers (biomass accumulation and tissue turnover
+above and belowground in terrestrial ecosystems) but also the C transfer
+to herbivores and root symbionts (for example, mycorrhizal fungi), the
+excretion of organic C from algae, and the production of root exudates
+and plant VOCs
+
 Previous NPP measurements:
 [**https://doi.org/10.1890/1051-0761(2001)011\[0356:MNPPIF\]2.0.CO;2**](https://doi.org/10.1890/1051-0761(2001)011%5B0356:MNPPIF%5D2.0.CO;2)
 
@@ -214,3 +273,5 @@ CO2 increase. R increase smaller than P increase
 
 In this paper, Gifford (1995) increased CO2 from ambient to 710 PPM,
 found CUE increased from 0.65 to 0.66
+
+## **2025/04/01** Measuring Net Primary Production in Forests: Concepts and Field Methods (Clark et al., 2001)
