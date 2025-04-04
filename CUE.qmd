@@ -274,4 +274,18 @@ CO2 increase. R increase smaller than P increase
 In this paper, Gifford (1995) increased CO2 from ambient to 710 PPM,
 found CUE increased from 0.65 to 0.66
 
-## **2025/04/01** Measuring Net Primary Production in Forests: Concepts and Field Methods (Clark et al., 2001)
+## **2025/04/04** Measuring Net Primary Production in Forests: Concepts and Field Methods (Clark et al., 2001)
+Purpose: 1) examine how forest NPP (above- and below-ground) can be estimated based on field measurements, 2) assess implications of the limitations of past studies for current perceptions of the amount of NPP in forests globally, 3) how field NPP studies can be used to evaluate tower-based measurements of forest carbon flux
+
+NPP is defined as the total new organic matter produced during a specified interval.
+
+NPP measurements:
+Approach one for individual trees measurements: 
+stand increment = (sum increments of surviving trees) + (sum increments of ingrowth)
+Ingrowth refers to trees that reached the minimum measurable size during the interval, and their NPP contribution is calculated only from that threshold to avoid overestimation.
+
+
+
+
+
+
