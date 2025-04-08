@@ -67,6 +67,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -141,6 +170,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#forest-production-efficiency-increases-with-growth-temperature-collalti-et-al.-2020" id="toc-forest-production-efficiency-increases-with-growth-temperature-collalti-et-al.-2020" class="nav-link" data-scroll-target="#forest-production-efficiency-increases-with-growth-temperature-collalti-et-al.-2020"><strong>Forest Production Efficiency Increases with Growth Temperature (Collalti et al., 2020)</strong></a></li>
   <li><a href="#grs-2500-words-quick-learn" id="toc-grs-2500-words-quick-learn" class="nav-link" data-scroll-target="#grs-2500-words-quick-learn"><strong>GRS 2500 WORDS QUICK LEARN</strong></a></li>
   <li><a href="#is-npp-proportional-to-gpp-warings-hypothesis-20-years-on-collalti-prentice-2019" id="toc-is-npp-proportional-to-gpp-warings-hypothesis-20-years-on-collalti-prentice-2019" class="nav-link" data-scroll-target="#is-npp-proportional-to-gpp-warings-hypothesis-20-years-on-collalti-prentice-2019"><strong>2025/03/26 Is NPP proportional to GPP? Waring’s hypothesis 20 years on (Collalti &amp; Prentice, 2019)</strong></a></li>
+  <li><a href="#net-primary-productivity-allocation-pattern-and-carbon-use-efficiency-in-an-apple-orchard-assessed-by-integrating-eddy-covariance-biometric-and-continuous-chamber-measurements-zanotelli-et-al.-2013" id="toc-net-primary-productivity-allocation-pattern-and-carbon-use-efficiency-in-an-apple-orchard-assessed-by-integrating-eddy-covariance-biometric-and-continuous-chamber-measurements-zanotelli-et-al.-2013" class="nav-link" data-scroll-target="#net-primary-productivity-allocation-pattern-and-carbon-use-efficiency-in-an-apple-orchard-assessed-by-integrating-eddy-covariance-biometric-and-continuous-chamber-measurements-zanotelli-et-al.-2013"><strong>2025/03/27</strong> Net primary productivity, allocation pattern and carbon use efficiency in an apple orchard assessed by integrating eddy covariance, biometric and continuous chamber measurements (Zanotelli et al., 2013)</a></li>
+  <li><a href="#the-proposed-of-concept-cue-whole-plant-respiration-and-photosynthesis-under-increased-co2-concentration-and-temperature-gifford-1995" id="toc-the-proposed-of-concept-cue-whole-plant-respiration-and-photosynthesis-under-increased-co2-concentration-and-temperature-gifford-1995" class="nav-link" data-scroll-target="#the-proposed-of-concept-cue-whole-plant-respiration-and-photosynthesis-under-increased-co2-concentration-and-temperature-gifford-1995"><strong>2025/03/28</strong> The proposed of concept CUE, Whole plant respiration and photosynthesis under increased CO2 concentration and Temperature (GIFFORD, 1995)</a></li>
+  <li><a href="#measuring-net-primary-production-in-forests-concepts-and-field-methods-clark-et-al.-2001" id="toc-measuring-net-primary-production-in-forests-concepts-and-field-methods-clark-et-al.-2001" class="nav-link" data-scroll-target="#measuring-net-primary-production-in-forests-concepts-and-field-methods-clark-et-al.-2001"><strong>2025/04/04</strong> Measuring Net Primary Production in Forests: Concepts and Field Methods (Clark et al., 2001)</a></li>
   </ul>
 </nav>
     </div>
@@ -167,6 +199,20 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Carbon-Cycle Concepts: https://doi.org/10.1007/s10021-005-0105-7</p>
+<p>Scientists: 1) some authors have defined NEP primarily as net C accumulation rate</p>
+<p>2) dissolved, volatile, and depositional organic and inorganic C fluxes other than GPP and ER are often substantial -&gt; the imbalance between GPP and ER does not equal next C accumulation rate in ecosystems -&gt; the imbalance between GPP and ER</p>
+<p>At the end, we think NEP = GPP - ER</p>
+<p>NECB as the net rate of C accumulation in ecosystems.</p>
+<p><span class="math inline">\(\text{NECB} = -\text{NEE} + F_{\text{CO}} + F_{\text{CH}4} + F{\text{VOC}} + F_{\text{DIC}} + F_{\text{DOC}} + F_{\text{PC}}\)</span></p>
+<p>FCO is net carbon monoxide (CO) absorption (or efflux [negative sign]); FCH4 is net methane (CH4) consumption (or efflux [negative sign]); FVOC is net volatile organic C (VOC) absorption (or efflux [negative sign]); FDIC is net dissolved inorganic C (DIC) input to the ecosystem (or net DIC leaching loss [negative sign]); FDOC is net dissolved organic C (DOC) input (or net DOC leaching loss [negative sign]); and FPC is the net lateral transfer of particulate (nondissolved, nongaseous) C into the ecosystem (or out of [negative sign]) by processes such as animal movement, soot emission during fires, water and wind deposition and erosion, and anthropogenic transport or harvest.</p>
+<p><strong>NEE is defined by atmospheric scientists as a C input to the atmosphere, wheres NEP and NECB are defined by ecologists as C inputs to ecosystems</strong></p>
+<p>GPP 1) = photosynthesis (we only have this when use Eddy Covariance) and 2) = photosynthesis + chemoautotrophy (a process where certain bacteria and archaea fix carbon dioxide into organic matter using energy from the oxidation of inorganic compounds instead of sunlight.)</p>
+<p>Autotrophic respiration (AR) is the sum of respiration (CO2 production) by all living parts of primary producers per unit ground or water area and time.</p>
+<p>Heterotrophic respiration (HR) is the respiration rate of heterotrophic organisms (animals and microbes) summed per unit ground or water area and time.</p>
+<p>Ecosystem respiration (ER) is the respiration of all organisms summed per unit ground or water area and time.</p>
+<p>Net ecosystem production (NEP) is GPP minus ER.</p>
+<p>Net ecosystem exchange (NEE) is the net CO2 exchange with the atmosphere—that is, the vertical and lateral CO2 flux from the ecosystem to the atmosphere (Baldocchi 2003).</p>
+<p>Net primary production (NPP) is GPP - AR. It includes not only the growth of primary producers (biomass accumulation and tissue turnover above and belowground in terrestrial ecosystems) but also the C transfer to herbivores and root symbionts (for example, mycorrhizal fungi), the excretion of organic C from algae, and the production of root exudates and plant VOCs</p>
 <p>Previous NPP measurements: <a href="https://doi.org/10.1890/1051-0761(2001)011%5B0356:MNPPIF%5D2.0.CO;2"><strong>https://doi.org/10.1890/1051-0761(2001)011[0356:MNPPIF]2.0.CO;2</strong></a></p>
 <p>Zanotelli D, Montagnani L, Manca G, Tagliavini M (2013) Net primary productivity, allocation pattern and carbon use efficiency in an apple orchard assessed by integrating eddy covariance, biometric and continuous chamber measurements. Biogeosciences 10:3089–3108.</p>
 <p>GPP is the balance between carbon fixed through photosynthesis and carbon lost through photorespiration, expressed per unit ground area and time</p>
@@ -222,6 +268,37 @@ Vicca et al.&nbsp;(2012) introduced ‘biomass production efficiency’, BPE = B
 <strong>De Lucia et al.&nbsp;(2007)</strong> the NPP:GPP ratio, largely based on biometric estimates of BP standing in for NPP, varied substantially among biomes and age classes.</p>
 <p><strong>Variability across measurement methods</strong></p>
 <p><strong>Curtis et al.&nbsp;(2005)</strong> compared independent methods to estimate BP and eddy covariance for GPP, an average NPP:GPP ratio of 0.42 ± 0.016 using biometric methods for both NPP and GPP and 0.54 ± 0.04 using biometric methods for NPP against eddy covariance GPP.</p>
+</section>
+<section id="net-primary-productivity-allocation-pattern-and-carbon-use-efficiency-in-an-apple-orchard-assessed-by-integrating-eddy-covariance-biometric-and-continuous-chamber-measurements-zanotelli-et-al.-2013" class="level2">
+<h2 class="anchored" data-anchor-id="net-primary-productivity-allocation-pattern-and-carbon-use-efficiency-in-an-apple-orchard-assessed-by-integrating-eddy-covariance-biometric-and-continuous-chamber-measurements-zanotelli-et-al.-2013"><strong>2025/03/27</strong> Net primary productivity, allocation pattern and carbon use efficiency in an apple orchard assessed by integrating eddy covariance, biometric and continuous chamber measurements (Zanotelli et al., 2013)</h2>
+<p><strong>This paper combined three largely deployed methods, eddy covariance, soil respiration and biometric measurements, to assess monthly values of CUE, NPP and allocation patterns in different plant organs in an apple orchard during 2010, with an annual average of 0.71 ± 0.12.</strong></p>
+<p>NPP = GPP-Ra = NEP+Rh</p>
+<p>GPP = NPP + Ra = NEP+Reco, Reco =Ra + Rh</p>
+<p>Methods:</p>
+<p>1) Eddy Covariance Technique for GPP</p>
+<p>2) Biometric measurements for NPP: NPP (How much has been growth?) = standing biomass from now - standing biomass from last time + litter collected in nets</p>
+<p>3) Automatic multichambered fir Rs and Rh (trenched)</p>
+<p>Ra can be calculated by 1) Ra = GPP (EC)-NPP (Biometric); 2) Ra = Reco (EC)- Rh (chamber); 3) Ra_BG = Rs-Rh, Ra = k(Ra_BG) upscaling the Ra_BG to get Ra</p>
+<p>NPP can be calculated by 1) NPP_biom or 2) NPP_flux (NEP from EC+Rh from chamber)</p>
+<p>GPP can be calculated by 1) GPP_EC from EC or GPP_BS = NPP_biom + upscale Ra</p>
+<p><strong>CUE can be calculated by 1) NPP_biom/GPP_EC (yearly and seasonal), 2) NPP_flux/GPP_BS (yearly), 3) NPP_flux/GPP_EC &amp; 4) NPP_biom/GPP_BS</strong></p>
+<p>Results: NPPbiom/GPPEC 0.76 ± 0.13 NPPflux/GPPEC 0.79 ±0.14 NPPbiom/GPPBS 0.64 ± 0.10 NPPflux/GPPBS 0.66 ± 0.11</p>
+<p>Takeaway: CUE of agro-ecosystems can be higher than that of forests growing in a similar climate, comes from higher GPP.</p>
+<p>Points to explore: CUE is an intuitive and easily comparable index to assess the capacity of an ecosystem to transfer C from the atmosphere to terrestrial biomass</p>
+<p>? The Eddysoft software uses the algorithm proposed by Eugster and Senn (1995) to correct for the underestimation of covariance signal due to damping of high-frequency fluctuation of CO2 concentration.</p>
+</section>
+<section id="the-proposed-of-concept-cue-whole-plant-respiration-and-photosynthesis-under-increased-co2-concentration-and-temperature-gifford-1995" class="level2">
+<h2 class="anchored" data-anchor-id="the-proposed-of-concept-cue-whole-plant-respiration-and-photosynthesis-under-increased-co2-concentration-and-temperature-gifford-1995"><strong>2025/03/28</strong> The proposed of concept CUE, Whole plant respiration and photosynthesis under increased CO2 concentration and Temperature (GIFFORD, 1995)</h2>
+<p>Gifford (1995) proposed the term ‘carbon use efficiency’ (CUE = 1 − Ra/GPP), which is equivalent to the NPP to GPP ratio as defined by Waring et al.&nbsp;(1998).</p>
+<p>Discussion about CUE:</p>
+<p>CUE = (P-R)/P = 1- R/P, in my finding, I found R/P becomes smaller as CO2 increase. R increase smaller than P increase</p>
+<p>In this paper, Gifford (1995) increased CO2 from ambient to 710 PPM, found CUE increased from 0.65 to 0.66</p>
+</section>
+<section id="measuring-net-primary-production-in-forests-concepts-and-field-methods-clark-et-al.-2001" class="level2">
+<h2 class="anchored" data-anchor-id="measuring-net-primary-production-in-forests-concepts-and-field-methods-clark-et-al.-2001"><strong>2025/04/04</strong> Measuring Net Primary Production in Forests: Concepts and Field Methods (Clark et al., 2001)</h2>
+<p>Purpose: 1) examine how forest NPP (above- and below-ground) can be estimated based on field measurements, 2) assess implications of the limitations of past studies for current perceptions of the amount of NPP in forests globally, 3) how field NPP studies can be used to evaluate tower-based measurements of forest carbon flux</p>
+<p>NPP is defined as the total new organic matter produced during a specified interval.</p>
+<p>NPP measurements: Approach one for individual trees measurements: stand increment = (sum increments of surviving trees) + (sum increments of ingrowth) Ingrowth refers to trees that reached the minimum measurable size during the interval, and their NPP contribution is calculated only from that threshold to avoid overestimation.</p>
 
 
 </section>
