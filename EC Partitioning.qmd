@@ -157,3 +157,19 @@ $$
 The daytime and nighttime approaches are built on the assumption that the reference respiration rate (*R*~ref~) does not change between night and day. If there's inhibition of leaf respiration in the light, then nighttime method will overestimate daytime respiration and the daytime method will underestimate the nighttime respiration
 
 Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.
+
+## 2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)**
+Problem with current methods: Both NT and DT methods rely on simplified empirical methods, which have structural errors.
+Simplified ER parameterization: 1) E0 and Rref remain same through day and night 2) Reco only rely on air or soil T
+Fail to capture fast environmental change
+
+What the research did? In this study, we show that a new NN framework informed by SIF observations (NNSIF) can tackle two problems simultaneously: (1) partitioning NEE into GPP and ER without prescribed empirical models, and (2) unraveling the GPP-SIF relationship at the ecosystem scale.
+
+Key concept here:
+Solar-induced chlorophyll fluorescence (SIF) is the faint light re-emitted by chlorophyll during photosynthesis under natural sunlight, serving as a passive, remote indicator of plant photosynthetic activity.
+
+During photosynthesis, chlorophyll molecules absorb light energy. This energy can follow three main pathways:1) Drive photochemistry (photosynthesis) – powering electron transport, 2) Be dissipated as heat and 3) Be re-emitted as fluorescence (a small portion, <5%).
+Thus, GPP can be related to SIF as SIF is a byproduct of the light reactions of photosynthesis, meaning it originates from the same absorbed light energy that drives carbon fixation — so higher photosynthetic activity generally results in stronger SIF signals.
+
+
+
