@@ -4,6 +4,8 @@ title: "EC Partitioning"
 
 ## A story of Partitioning
 
+The importance of eddy-covariace: 1) Having a global estimate based on observations and 2) These global gridded datasets are highly promising for land surface model validation and improvement (doi:10.1029/2010JG001593, 2011.)
+
 The CO~2~ analyzer is measuring CO~2~ flux or what we called net ecosystem exchange (F~CO2~ or NEE), it's essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as $NEE = Reco - GPP$. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
 
 There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) [(Burba, 2022)](https://www.licor.com/env/products/eddy-covariance/ec-book/).
@@ -158,18 +160,26 @@ The daytime and nighttime approaches are built on the assumption that the refere
 
 Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.
 
-## 2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)**
-Problem with current methods: Both NT and DT methods rely on simplified empirical methods, which have structural errors.
-Simplified ER parameterization: 1) E0 and Rref remain same through day and night 2) Reco only rely on air or soil T
-Fail to capture fast environmental change
+## 2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)\*\* Revisit need
+
+Problem with current methods: Both NT and DT methods rely on simplified empirical methods, which have structural errors. Simplified ER parameterization: 1) E0 and Rref remain same through day and night 2) Reco only rely on air or soil T Fail to capture fast environmental change
 
 What the research did? In this study, we show that a new NN framework informed by SIF observations (NNSIF) can tackle two problems simultaneously: (1) partitioning NEE into GPP and ER without prescribed empirical models, and (2) unraveling the GPP-SIF relationship at the ecosystem scale.
 
-Key concept here:
-Solar-induced chlorophyll fluorescence (SIF) is the faint light re-emitted by chlorophyll during photosynthesis under natural sunlight, serving as a passive, remote indicator of plant photosynthetic activity.
+Key concept here: Solar-induced chlorophyll fluorescence (SIF) is the faint light re-emitted by chlorophyll during photosynthesis under natural sunlight, serving as a passive, remote indicator of plant photosynthetic activity.
 
-During photosynthesis, chlorophyll molecules absorb light energy. This energy can follow three main pathways:1) Drive photochemistry (photosynthesis) – powering electron transport, 2) Be dissipated as heat and 3) Be re-emitted as fluorescence (a small portion, <5%).
-Thus, GPP can be related to SIF as SIF is a byproduct of the light reactions of photosynthesis, meaning it originates from the same absorbed light energy that drives carbon fixation — so higher photosynthetic activity generally results in stronger SIF signals.
+During photosynthesis, chlorophyll molecules absorb light energy. This energy can follow three main pathways:1) Drive photochemistry (photosynthesis) – powering electron transport, 2) Be dissipated as heat and 3) Be re-emitted as fluorescence (a small portion, \<5%). Thus, GPP can be related to SIF as SIF is a byproduct of the light reactions of photosynthesis, meaning it originates from the same absorbed light energy that drives carbon fixation — so higher photosynthetic activity generally results in stronger SIF signals.
 
+## 2025/04/09 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart & Galvagno, 2016)
 
+Main objective: revisit the effects related to the choice of the driving temperature on inferred GPP and Reco
 
+## 2025/04/10 On the choice of driving temperature for eddy-covariance carbon dioxide flux partitioning (Lasslop et al., 2012)
+
+Main objective: investigate the potential of air and soil temperatures, also surface temperatures, as drivers for night-time partitioning algorithms; quantify the uncertainty and potential biases arising from the choice of the driving temperature for respiration.
+
+Conclusion: The highest performance was achieved with an averaged temperature with optimised weights, in spite of the cost of having an additional parameter. We recommend site specific evaluations to determine which temperature explains most of the variability of the ecosystem respiration (nighttime NEE). As surface temperature showed a good correlation with nighttime NEE, observations of longwave radiation or surface temperature could be a useful extension of the measurements at flux sites.
+
+Important Points: Keeping the model’s structure simple is an important goal in order to remain as close as possible to the data, to avoid additional assumptions, and to avoid additional sources of uncertainty.
+
+For a subset of sites, observations of the longwave radiation were available and Tsurf could be considered. For this subset of sites, the mean correlation coefficients computed between NEE and different temperature streams were not significantly different. We again observed the Topt had the greatest correlation with nighttime NEE (median = 0.367). For Tmean the median correlation was 0.346, followed by Tsurf derived from longwave radiation (0.339) (no figure). Tsoil, for this subset, showed a stronger correlation (0.332) than the air temperature (0.325).
