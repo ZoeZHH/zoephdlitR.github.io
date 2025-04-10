@@ -205,3 +205,12 @@ Opaque chambers for daytime and nighttime measurements -\> mimic the daytime, ni
 Key findings:
 
 -   The diurnal course of Reco, in contrast, reflects the additive contributions of both below- and aboveground respiration (Eq. (1)) and reaches minima/maxima after that of air and before that of soil temperature (Fig. 1a).
+
+Ts (explains Rbg; more likely influence the Reco at night)\
+Ta (explains Rag; more likely influence Reco at day)
+
+If using Ts to estimate the Reco for day -\> daytime Ta responds faster -\> underestimate the Reco at day\
+If using Ta to estimate the Reco for day -\> Ta changes fast but Reco not that fast since a big portion from Rbg, thus steeper E0, overestimate the Reco.\
+Thus, nighttime Reco is overestimated based on soil temperature and underestimated based on air temperature
+
+The magnitude of the over or underestimation depends on 1) phase shift between Ts and Ta (**time lag** between their daily **maxima** (or minima) during a typical diurnal cycle) and 2) the magnitude of soil and above-ground respiration

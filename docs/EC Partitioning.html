@@ -177,6 +177,9 @@ window.Quarto = {
   <li><a href="#daytime-flux-partitioning-method---lasslop-et-al.-2010" id="toc-daytime-flux-partitioning-method---lasslop-et-al.-2010" class="nav-link" data-scroll-target="#daytime-flux-partitioning-method---lasslop-et-al.-2010">Daytime flux partitioning method -&gt; Lasslop et al.&nbsp;(2010)</a></li>
   <li><a href="#partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020" id="toc-partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020" class="nav-link" data-scroll-target="#partitioning-net-carbon-dioxide-fluxes-into-photosynthesis-and-respiration-using-neural-networks---tramontana-et-al.-2020">Partitioning net carbon dioxide fluxes into photosynthesis and respiration using neural networks -&gt; (Tramontana et al., 2020)</a></li>
   <li><a href="#widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019" id="toc-widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019" class="nav-link" data-scroll-target="#widespread-inhibition-of-daytime-ecosystem-respiration-keenan-et-al.-2019"><strong>Widespread inhibition of daytime ecosystem respiration (Keenan et al., 2019)</strong></a></li>
+  <li><a href="#partitioning-through-gpp-sif-keenan-et-al.-2022-revisit-need" id="toc-partitioning-through-gpp-sif-keenan-et-al.-2022-revisit-need" class="nav-link" data-scroll-target="#partitioning-through-gpp-sif-keenan-et-al.-2022-revisit-need">2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)** Revisit need</a></li>
+  <li><a href="#on-the-choice-of-driving-temperature-for-eddy-covariance-carbon-dioxide-flux-partitioning-lasslop-et-al.-2012" id="toc-on-the-choice-of-driving-temperature-for-eddy-covariance-carbon-dioxide-flux-partitioning-lasslop-et-al.-2012" class="nav-link" data-scroll-target="#on-the-choice-of-driving-temperature-for-eddy-covariance-carbon-dioxide-flux-partitioning-lasslop-et-al.-2012">2025/04/09 On the choice of driving temperature for eddy-covariance carbon dioxide flux partitioning (Lasslop et al., 2012)</a></li>
+  <li><a href="#revisiting-the-choice-of-the-driving-temperature-for-eddy-covariance-co2-flux-partitioning-wohlfahart-galvagno-2016" id="toc-revisiting-the-choice-of-the-driving-temperature-for-eddy-covariance-co2-flux-partitioning-wohlfahart-galvagno-2016" class="nav-link" data-scroll-target="#revisiting-the-choice-of-the-driving-temperature-for-eddy-covariance-co2-flux-partitioning-wohlfahart-galvagno-2016">2025/04/10 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart &amp; Galvagno, 2016)</a></li>
   </ul>
 </nav>
     </div>
@@ -204,6 +207,7 @@ window.Quarto = {
 
 <section id="a-story-of-partitioning" class="level2">
 <h2 class="anchored" data-anchor-id="a-story-of-partitioning">A story of Partitioning</h2>
+<p>The importance of eddy-covariace: 1) Having a global estimate based on observations and 2) These global gridded datasets are highly promising for land surface model validation and improvement (doi:10.1029/2010JG001593, 2011.)</p>
 <p>The CO<sub>2</sub> analyzer is measuring CO<sub>2</sub> flux or what we called net ecosystem exchange (F<sub>CO2</sub> or NEE), it’s essentially a difference between ecosystem respiration (Reco) and gross primary production (GPP), as <span class="math inline">\(NEE = Reco - GPP\)</span>. Partitioning is to partition the NEE measured by tower into GPP and Reco, which is important in flux data analysis <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p>There are mainly two groups of NEE partitioning: one group methods are empirical models (establish site specifics relationship between nighttime flux and biophysical controls, then used the relationship to approximate daytime Reco). Another group of methods is more complex but less empirical models (light response curves using just daytime or 24-hour data) <a href="https://www.licor.com/env/products/eddy-covariance/ec-book/">(Burba, 2022)</a>.</p>
 <p><a href="https://www.bgc-jena.mpg.de/5624848/Flux-partitioning" class="uri">https://www.bgc-jena.mpg.de/5624848/Flux-partitioning</a></p>
@@ -267,6 +271,9 @@ R = A e^{-\frac{E_0}{T - T_0}}
 </ul>
 <p><span class="math display">\[R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} - T_0} - \frac{1}{T - T_0} \right)}\]</span></p>
 <p>T<sub>0</sub> is kept constant at -46.02 celsius degrees; T<sub>ref</sub> is set to 10 celsius degrees in (Reichstein, 2005) and 15 celsius degrees in (Lasslop et al., 2010). E<sub>0</sub>, temperature sensitivity is a constant value used for the whole year in (Lasslop et al., 2010) and in a short periods in (Reichstein, 2005), R<sub>eco,ref</sub> was estimated every 5 days using a 15 days window.</p>
+<p>Log formed:</p>
+<p><span class="math display">\[\ln(R_{\text{eco}}(T)) = \ln(R_{\text{eco,ref}}) + E_0 \left( \frac{1}{T_{\text{ref}} - T_0} - \frac{1}{T - T_0} \right)\]</span></p>
+<p>Thus, ln (Reco,ref) as the intercept, E0 temperature sensitivity as slope.</p>
 <p>Using daytime temperature, respiration is extrapolated to the daytime and the difference between modeled R<sub>eco</sub> and measured NEE yields estimated GPP. We refer to this estimate as ‘NB’ (nighttime data-based).</p>
 <p>The paper for REddyProc package: <a href="https://bg.copernicus.org/articles/15/5015/2018/" class="uri">https://bg.copernicus.org/articles/15/5015/2018/</a></p>
 </section>
@@ -305,6 +312,34 @@ R = A e^{-\frac{E_0}{T - T_0}}
 <p><a href="https://www.nature.com/articles/s41559-019-0809-2#ref-CR12" class="uri">https://www.nature.com/articles/s41559-019-0809-2#ref-CR12</a> With the consideration of the inhibition of leaf respiration in the light</p>
 <p>The daytime and nighttime approaches are built on the assumption that the reference respiration rate (<em>R</em><sub>ref</sub>) does not change between night and day. If there’s inhibition of leaf respiration in the light, then nighttime method will overestimate daytime respiration and the daytime method will underestimate the nighttime respiration</p>
 <p>Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.</p>
+</section>
+<section id="partitioning-through-gpp-sif-keenan-et-al.-2022-revisit-need" class="level2">
+<h2 class="anchored" data-anchor-id="partitioning-through-gpp-sif-keenan-et-al.-2022-revisit-need">2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)** Revisit need</h2>
+<p>Problem with current methods: Both NT and DT methods rely on simplified empirical methods, which have structural errors. Simplified ER parameterization: 1) E0 and Rref remain same through day and night 2) Reco only rely on air or soil T Fail to capture fast environmental change</p>
+<p>What the research did? In this study, we show that a new NN framework informed by SIF observations (NNSIF) can tackle two problems simultaneously: (1) partitioning NEE into GPP and ER without prescribed empirical models, and (2) unraveling the GPP-SIF relationship at the ecosystem scale.</p>
+<p>Key concept here: Solar-induced chlorophyll fluorescence (SIF) is the faint light re-emitted by chlorophyll during photosynthesis under natural sunlight, serving as a passive, remote indicator of plant photosynthetic activity.</p>
+<p>During photosynthesis, chlorophyll molecules absorb light energy. This energy can follow three main pathways:1) Drive photochemistry (photosynthesis) – powering electron transport, 2) Be dissipated as heat and 3) Be re-emitted as fluorescence (a small portion, &lt;5%). Thus, GPP can be related to SIF as SIF is a byproduct of the light reactions of photosynthesis, meaning it originates from the same absorbed light energy that drives carbon fixation — so higher photosynthetic activity generally results in stronger SIF signals.</p>
+</section>
+<section id="on-the-choice-of-driving-temperature-for-eddy-covariance-carbon-dioxide-flux-partitioning-lasslop-et-al.-2012" class="level2">
+<h2 class="anchored" data-anchor-id="on-the-choice-of-driving-temperature-for-eddy-covariance-carbon-dioxide-flux-partitioning-lasslop-et-al.-2012">2025/04/09 On the choice of driving temperature for eddy-covariance carbon dioxide flux partitioning (Lasslop et al., 2012)</h2>
+<p>Main objective: investigate the potential of air and soil temperatures, also surface temperatures, as drivers for night-time partitioning algorithms; quantify the uncertainty and potential biases arising from the choice of the driving temperature for respiration.</p>
+<p>Conclusion: The highest performance was achieved with an averaged temperature with optimised weights, in spite of the cost of having an additional parameter. We recommend site specific evaluations to determine which temperature explains most of the variability of the ecosystem respiration (nighttime NEE). As surface temperature showed a good correlation with nighttime NEE, observations of longwave radiation or surface temperature could be a useful extension of the measurements at flux sites.</p>
+<p>Important Points: Keeping the model’s structure simple is an important goal in order to remain as close as possible to the data, to avoid additional assumptions, and to avoid additional sources of uncertainty.</p>
+<p>For a subset of sites, observations of the longwave radiation were available and Tsurf could be considered. For this subset of sites, the mean correlation coefficients computed between NEE and different temperature streams were not significantly different. We again observed the Topt had the greatest correlation with nighttime NEE (median = 0.367). For Tmean the median correlation was 0.346, followed by Tsurf derived from longwave radiation (0.339) (no figure). Tsoil, for this subset, showed a stronger correlation (0.332) than the air temperature (0.325).</p>
+</section>
+<section id="revisiting-the-choice-of-the-driving-temperature-for-eddy-covariance-co2-flux-partitioning-wohlfahart-galvagno-2016" class="level2">
+<h2 class="anchored" data-anchor-id="revisiting-the-choice-of-the-driving-temperature-for-eddy-covariance-co2-flux-partitioning-wohlfahart-galvagno-2016">2025/04/10 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart &amp; Galvagno, 2016)</h2>
+<p>Main objective: revisit the effects related to the choice of the driving temperature on inferred GPP and Reco</p>
+<p>Methods:</p>
+<p>Using grassland and temperatures for surface temperaturem, soil temperature at 0.02m and 0.1m</p>
+<p>1) Seperate daytime, nighttime Reco for the same temeprature, to compare</p>
+<p>If different -&gt; there is sth other than light inhibition problem, is that interchangeable for Reco, day and Reco, night, both used a temperature?</p>
+<p>2) Fit in the logtransformed Reco and T to llyod equation, check slopes (how sensitive Reco is to T change) and y-intercepts (Reco at reference T) between day and night Reco -&gt; Check if Reco responds to temperature in the same way during both day and night</p>
+<p>Opaque chambers for daytime and nighttime measurements -&gt; mimic the daytime, nighttime Reco extrapolated from the Llyod equations</p>
+<p>Key findings:</p>
+<ul>
+<li>The diurnal course of Reco, in contrast, reflects the additive contributions of both below- and aboveground respiration (Eq. (1)) and reaches minima/maxima after that of air and before that of soil temperature (Fig. 1a).</li>
+</ul>
 
 
 </section>
