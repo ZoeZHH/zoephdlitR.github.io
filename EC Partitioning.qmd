@@ -98,6 +98,12 @@ $$R_{\text{eco}}(T) = R_{\text{eco,ref}} e^{E_0 \left( \frac{1}{T_{\text{Ref}} -
 
 T~0~ is kept constant at -46.02 celsius degrees; T~ref~ is set to 10 celsius degrees in (Reichstein, 2005) and 15 celsius degrees in (Lasslop et al., 2010). E~0~, temperature sensitivity is a constant value used for the whole year in (Lasslop et al., 2010) and in a short periods in (Reichstein, 2005), R~eco,ref~ was estimated every 5 days using a 15 days window.
 
+Log formed:
+
+$$\ln(R_{\text{eco}}(T)) = \ln(R_{\text{eco,ref}}) + E_0 \left( \frac{1}{T_{\text{ref}} - T_0} - \frac{1}{T - T_0} \right)$$
+
+Thus, ln (Reco,ref) as the intercept, E0 temperature sensitivity as slope.
+
 Using daytime temperature, respiration is extrapolated to the daytime and the difference between modeled R~eco~ and measured NEE yields estimated GPP. We refer to this estimate as ‘NB’ (nighttime data-based).
 
 The paper for REddyProc package: <https://bg.copernicus.org/articles/15/5015/2018/>
@@ -170,11 +176,7 @@ Key concept here: Solar-induced chlorophyll fluorescence (SIF) is the faint ligh
 
 During photosynthesis, chlorophyll molecules absorb light energy. This energy can follow three main pathways:1) Drive photochemistry (photosynthesis) – powering electron transport, 2) Be dissipated as heat and 3) Be re-emitted as fluorescence (a small portion, \<5%). Thus, GPP can be related to SIF as SIF is a byproduct of the light reactions of photosynthesis, meaning it originates from the same absorbed light energy that drives carbon fixation — so higher photosynthetic activity generally results in stronger SIF signals.
 
-## 2025/04/09 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart & Galvagno, 2016)
-
-Main objective: revisit the effects related to the choice of the driving temperature on inferred GPP and Reco
-
-## 2025/04/10 On the choice of driving temperature for eddy-covariance carbon dioxide flux partitioning (Lasslop et al., 2012)
+## 2025/04/09 On the choice of driving temperature for eddy-covariance carbon dioxide flux partitioning (Lasslop et al., 2012)
 
 Main objective: investigate the potential of air and soil temperatures, also surface temperatures, as drivers for night-time partitioning algorithms; quantify the uncertainty and potential biases arising from the choice of the driving temperature for respiration.
 
@@ -183,3 +185,23 @@ Conclusion: The highest performance was achieved with an averaged temperature wi
 Important Points: Keeping the model’s structure simple is an important goal in order to remain as close as possible to the data, to avoid additional assumptions, and to avoid additional sources of uncertainty.
 
 For a subset of sites, observations of the longwave radiation were available and Tsurf could be considered. For this subset of sites, the mean correlation coefficients computed between NEE and different temperature streams were not significantly different. We again observed the Topt had the greatest correlation with nighttime NEE (median = 0.367). For Tmean the median correlation was 0.346, followed by Tsurf derived from longwave radiation (0.339) (no figure). Tsoil, for this subset, showed a stronger correlation (0.332) than the air temperature (0.325).
+
+## 2025/04/10 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart & Galvagno, 2016)
+
+Main objective: revisit the effects related to the choice of the driving temperature on inferred GPP and Reco
+
+Methods:
+
+Using grassland and temperatures for surface temperaturem, soil temperature at 0.02m and 0.1m
+
+1\) Seperate daytime, nighttime Reco for the same temeprature, to compare
+
+If different -\> there is sth other than light inhibition problem, is that interchangeable for Reco, day and Reco, night, both used a temperature?
+
+2\) Fit in the logtransformed Reco and T to llyod equation, check slopes (how sensitive Reco is to T change) and y-intercepts (Reco at reference T) between day and night Reco -\> Check if Reco responds to temperature in the same way during both day and night
+
+Opaque chambers for daytime and nighttime measurements -\> mimic the daytime, nighttime Reco extrapolated from the Llyod equations
+
+Key findings:
+
+-   The diurnal course of Reco, in contrast, reflects the additive contributions of both below- and aboveground respiration (Eq. (1)) and reaches minima/maxima after that of air and before that of soil temperature (Fig. 1a).
