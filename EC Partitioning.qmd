@@ -186,6 +186,12 @@ Important Points: Keeping the model’s structure simple is an important goal in
 
 For a subset of sites, observations of the longwave radiation were available and Tsurf could be considered. For this subset of sites, the mean correlation coefficients computed between NEE and different temperature streams were not significantly different. We again observed the Topt had the greatest correlation with nighttime NEE (median = 0.367). For Tmean the median correlation was 0.346, followed by Tsurf derived from longwave radiation (0.339) (no figure). Tsoil, for this subset, showed a stronger correlation (0.332) than the air temperature (0.325).
 
+Methods on examining correlations:
+
+1.  Sliding Window Correlation: 12-day moving window. For each 12-day window, calculated the correlation between nighttime NEE and different temperature variables, half-hourly. Using median correlations
+2.  Built linear models and use AIC to check which temperature explains the most variability of NEE\
+    AIC = n log (RSS/n) + 2 (p+1)
+
 ## 2025/04/10 Revisiting the choice of the driving temperature for eddy covariance CO2 flux partitioning (Wohlfahart & Galvagno, 2016)
 
 Main objective: revisit the effects related to the choice of the driving temperature on inferred GPP and Reco
