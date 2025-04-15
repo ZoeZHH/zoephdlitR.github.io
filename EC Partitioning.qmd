@@ -22,6 +22,16 @@ Nighttime Partitioning Drawbacks:
 
 1\) frequent nighttime suppression of turbulence and dominance of advective fluxes not measured by conventional EC systems (Lasslop et al., 2010)
 
+Accurately partitioning NEE into ER and GPP can:
+
+1\) understanding the responses of the terrestrial carbon cycle to a changing climate, especially during extreme events (10.1088/1748-9326/9/3/035001)
+
+2\) better understand the underlying mechanisms constraining ecosystem functions
+
+3\) GPP and RECO estimates from EC are useful for modeling, supporting process-based model parameterization and validation, data assimilation, plant trait retrieval by model inversion, upscaling, as well as photosynthesis estimates based on remote sensing
+
+With the coming up machine learning methods, how do you think compared with the algorithms (sulman et al., 2020; Weiwei et al., 2022)?
+
 ## Partitioning with REddyProc
 
 (Wutzler et al., 2018) Read from 2024/10/31 to , check the paper here: https://doi.org/10.5194/bg-15-5015-2018
@@ -166,7 +176,7 @@ The daytime and nighttime approaches are built on the assumption that the refere
 
 Here, modified both the standard daytime and night-time partitioning methods to account for an apparent inhibition by estimating and applying Rref nighttime and Rref daytime separately.
 
-## 2025/04/08 Partitioning through GPP-SIF (Keenan et al., 2022)\*\* Revisit need
+## 2025/04/08 Partitioning through GPP-SIF (Weiwei et al., 2022)\*\* Revisit need
 
 Problem with current methods: Both NT and DT methods rely on simplified empirical methods, which have structural errors. Simplified ER parameterization: 1) E0 and Rref remain same through day and night 2) Reco only rely on air or soil T Fail to capture fast environmental change
 
@@ -220,3 +230,8 @@ If using Ta to estimate the Reco for day -\> Ta changes fast but Reco not that f
 Thus, nighttime Reco is overestimated based on soil temperature and underestimated based on air temperature
 
 The magnitude of the over or underestimation depends on 1) phase shift between Ts and Ta (**time lag** between their daily **maxima** (or minima) during a typical diurnal cycle) and 2) the magnitude of soil and above-ground respiration
+
+## Problems with Partitioning Algorithms in Deriving GPP and Reco
+
+1.  Light Inhibition Problems (daytime lower Reco)
+2.  hysteresis can lead to systematic under- or overestimation in flux-partitioning algorithms that selectively fit only daytime or nighttime data and then extrapolate the model in time.
