@@ -18,6 +18,12 @@ Other Possible Ways on measuring Reco:
 
 2\) From chamber measurements extrapolated to the stand scale (<https://doi.org/10.1046/j.1365-2486.1999.00214.x>; <https://pubmed.ncbi.nlm.nih.gov/11262922/>)
 
+(Desai et al., 2007)
+
+It is currently not possible to obtain direct, integrated observations of either GPP or RE, because these processes represent a multitude of responses by a combination of autotrophic and heterotrophic organisms.
+
+Scaling from chamber level measurements to canopy level is labor intensive and fraught with high sampling uncertainty.
+
 Nighttime Partitioning Drawbacks:
 
 1\) frequent nighttime suppression of turbulence and dominance of advective fluxes not measured by conventional EC systems (Lasslop et al., 2010)
