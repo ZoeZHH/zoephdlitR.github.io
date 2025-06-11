@@ -241,3 +241,17 @@ The magnitude of the over or underestimation depends on 1) phase shift between T
 
 1.  Light Inhibition Problems (daytime lower Reco)
 2.  hysteresis can lead to systematic under- or overestimation in flux-partitioning algorithms that selectively fit only daytime or nighttime data and then extrapolate the model in time.
+
+## 2025/04/20 History of EC Partitioning
+
+Webb, E.K., Pearman, G.I., Leuning, R., 1980. Correction of flux measurements for density effects due to heat and water vapor transfer. Q. J. R. Meteorol. Soc. 106, 85–100.
+
+**1972** - [(Desjardins, 1972)](https://www.proquest.com/openview/509c986b0ec387de6f4618203c677d59/1?cbl=18750&diss=y&pq-origsite=gscholar) [(Desjardins, 1974)](https://link.springer.com/article/10.1007/BF00123493) Desjardins developed the first eddy covariance flux tower to measure CO₂ during his PhD research, titled "A study of CO₂ and sensible heat fluxes using the eddy correlation technique."
+
+(Morgenstern et al., 2004) The authors chose the Q₁₀ model over the activation energy (Arrhenius) model because both gave similar fits, but the Q₁₀ model allowed for a statistically more appropriate linear regression via logarithmic transformation, helping to deal with noise and heteroscedasticity in EC data.
+
+$$
+\begin{equation}R = A e^{BT} = R_{\text{ref}} Q_{10}^{(T - T_{\text{ref}})/10}\end{equation}
+$$
+
+（Gilmanov et al., 2003) The first empirically based estimates of GPP
